@@ -1197,6 +1197,7 @@ function messageWebhook(message) {
 //report webhook
 async function reportWebhook() {
     if(process.env.USE_DISCORD) {
+        var balance = await getBalance();
         const settings = JSON.parse(fs.readFileSync('account.json', 'utf8'));
         //check if starting balance is set
         if (settings.startingBalance === 0) {
@@ -1217,7 +1218,7 @@ async function reportWebhook() {
         //console.log("Duration: " + times[0] + " days, " + times[1] + " hours, " + times[2] + " minutes, " + times[3] + " sec.");
 
         //fetch balance
-        var balance = await getBalance();
+        
         var diff = balance - startingBalance;
         var percentGain = (diff / startingBalance) * 100;
         var percentGain = percentGain.toFixed(6);
