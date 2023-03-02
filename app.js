@@ -6,14 +6,9 @@ import fetch from 'node-fetch';
 import chalk from 'chalk';
 import fs from 'fs';
 import { Webhook, MessageBuilder } from 'discord-webhook-node';
+import moment from 'moment';
+import * as cron from 'node-cron'
 
-var hook;
-if (process.env.USE_DISCORD) {
-    hook = new Webhook(process.env.DISCORD_URL);
-}
-
-const key = process.env.API_KEY;
-const secret = process.env.API_SECRET;
 var rateLimit = 2000;
 var baseRateLimit = 2000;
 var lastReport = 0;
@@ -21,24 +16,85 @@ var pairs = [];
 var liquidationOrders = [];
 var lastUpdate = 0;
 
+// used to calculate bot runtime
+const timestampBotStart = moment();
 
+// Discord report cron tasks
+const cronTaskDiscordPositionReport = cron.schedule(process.env.REPORT_INTERVALL, () => {
+    console.log(moment().toString() + ' REPORT');
+    reportWebhook();
+    });
 
-//create ws client
-const wsClient = new WebsocketClient({
-    key: key,
-    secret: secret,
-    market: 'linear',
-    livenet: true,
-});
+var hook;
+if (process.env.USE_DISCORD) {
+    if (process.env.USE_TESTNET == "false") {
+        hook = new Webhook(process.env.DISCORD_URL);
+    } else {
+        hook = new Webhook(process.env.DISCORD_URL_TESTNET);
+    }
+}
+
+var key;
+var secret;
+var keyWsTestnet;
+var secretWsTestnet;
+
+if (process.env.USE_TESTNET == "false") {
+    key = process.env.API_KEY;
+    secret = process.env.API_SECRET;
+} else {
+    key = process.env.API_KEY_TESTNET;
+    secret = process.env.API_SECRET_TESTNET;
+    keyWsTestnet = process.env.API_KEY;
+    secretWsTestnet = process.env.API_SECRET;
+}
+
+//create ws and linear client
+var wsClient;
+var linearClient;
+if (process.env.USE_TESTNET == "false") {
+    console.log("Setting up websocket client for LIVENET");
+    wsClient = new WebsocketClient({
+        key: key,
+        secret: secret,
+        market: 'linear',
+        livenet: true,
+    });
+    console.log("Setting up linear client for LIVENET");
+    linearClient = new LinearClient({
+        key: key,
+        secret: secret,
+        livenet: true,
+    });
+} else {
+    console.log("Setting up websocket client for TESTNET");
+    wsClient = new WebsocketClient({
+        key: keyWsTestnet,
+        secret: secretWsTestnet,
+        market: 'linear',
+        livenet: true,
+    });
+    console.log("Setting up linear client for TESTNET");
+    linearClient = new LinearClient({
+        key: key,
+        secret: secret,
+        testnet: true,
+    });
+}
+
 //create linear client
-const linearClient = new LinearClient({
-    key: key,
-    secret: secret,
-    livenet: true,
-});
+
+if (process.env.USE_TESTNET == "false") {
+    
+    
+} else {
+    
+    
+}
+
 
 wsClient.on('update', (data) => {
-    //console.log('raw message received ', JSON.stringify(data, null, 2));
+    console.log('raw message received ', JSON.stringify(data, null, 2));
     var pair = data.data.symbol;
     var price = parseFloat(data.data.price);
     var side = data.data.side;
@@ -58,7 +114,10 @@ wsClient.on('update', (data) => {
 
     //get blacklisted pairs
     const blacklist = [];
-    process.env.BLACKLIST.split(', ').forEach(item => {
+    var blacklist_all = process.env.BLACKLIST;
+    blacklist_all = blacklist_all.replaceAll(" ", "");
+       
+    blacklist_all.split(',').forEach(item => {
         blacklist.push(item);
     });
 
@@ -131,20 +190,25 @@ async function liquidationEngine(pairs) {
     wsClient.subscribe(pairs);
 }
 
+// Get API key information
+async function ApiKeyInformation() {
+    // todo
+}
+
 //Get server time
 async function getServerTime() {
     const data = await linearClient.fetchServerTime();
-    var usedBalance = new Date(data *1000);
-    var balance = usedBalance.toGMTString()+'\n'+usedBalance.toLocaleString();
+    var serverTime = new Date(data * 1000);
+    var serverTimeGmt = serverTime.toGMTString()+'\n' + serverTime.toLocaleString();
 
     //cehck when last was more than 5 minutes ago
-    if (Date.now() - lastReport > 300000) {
-        //send report
-        reportWebhook();
-        //checkCommit();
-        lastReport = Date.now();
-    }
-    return balance;
+    // if (Date.now() - lastReport > 300000) {
+    //     //send report
+    //     reportWebhook();
+    //     //checkCommit();
+    //     lastReport = Date.now();
+    // }
+    return serverTimeGmt;
 
 }
 
@@ -155,14 +219,13 @@ async function getMargin() {
     var balance = usedBalance;
 
     //cehck when last was more than 5 minutes ago
-    if (Date.now() - lastReport > 300000) {
-        //send report
-        reportWebhook();
-        //checkCommit();
-        lastReport = Date.now();
-    }
+    // if (Date.now() - lastReport > 300000) {
+    //     //send report
+    //     reportWebhook();
+    //     //checkCommit();
+    //     lastReport = Date.now();
+    // }
     return balance;
-
 }
 
 //get account balance
@@ -196,12 +259,12 @@ async function getBalance() {
         }
 
         //cehck when last was more than 5 minutes ago
-        if (Date.now() - lastReport > 300000) {
-            //send report
-            reportWebhook();
-            //checkCommit();
-            lastReport = Date.now();
-        }
+        // if (Date.now() - lastReport > 300000) {
+        //     //send report
+        //     reportWebhook();
+        //     //checkCommit();
+        //     lastReport = Date.now();
+        // }
         return balance;
     }
     catch (e) {
@@ -412,15 +475,20 @@ async function scalp(pair, index) {
                             var index = tickData.findIndex(x => x.pair === pair);
                             var tickSize = tickData[index].tickSize;
                             var decimalPlaces = (tickSize.toString().split(".")[1] || []).length;
-                            const order = await linearClient.placeActiveOrder({
-                                symbol: pair,
-                                side: "Buy",
-                                order_type: "Market",
-                                qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
-                                time_in_force: "GoodTillCancel",
-                                reduce_only: false,
-                                close_on_trigger: false
-                            });
+                            if (process.env.DEBUG_MODE == "false") {
+                                const order = await linearClient.placeActiveOrder({
+                                    symbol: pair,
+                                    side: "Buy",
+                                    order_type: "Market",
+                                    qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
+                                    time_in_force: "GoodTillCancel",
+                                    reduce_only: false,
+                                    close_on_trigger: false
+                                });
+                            } else {
+                                console.log("DUMMY ORDER (BUY) - YOU ARE IN DEBUG MODE !");
+                            }
+                            
                             //console.log("Order placed: " + JSON.stringify(order, null, 2));
                             console.log(chalk.bgGreenBright("Long Order Placed for " + pair + " at " + settings.pairs[settingsIndex].order_size + " size"));
                             if(process.env.USE_DISCORD) {
@@ -438,15 +506,19 @@ async function scalp(pair, index) {
                                 var index = tickData.findIndex(x => x.pair === pair);
                                 var tickSize = tickData[index].tickSize;
                                 var decimalPlaces = (tickSize.toString().split(".")[1] || []).length;
-                                const order = await linearClient.placeActiveOrder({
-                                    symbol: pair,
-                                    side: "Buy",
-                                    order_type: "Market",
-                                    qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
-                                    time_in_force: "GoodTillCancel",
-                                    reduce_only: false,
-                                    close_on_trigger: false
-                                });
+                                if (process.env.DEBUG_MODE == "false") {
+                                    const order = await linearClient.placeActiveOrder({
+                                        symbol: pair,
+                                        side: "Buy",
+                                        order_type: "Market",
+                                        qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
+                                        time_in_force: "GoodTillCancel",
+                                        reduce_only: false,
+                                        close_on_trigger: false
+                                    });
+                                } else {
+                                    console.log("DUMMY ORDER (BUY) - YOU ARE IN DEBUG MODE !");
+                                }
                                 //console.log("Order placed: " + JSON.stringify(order, null, 2));
                                 console.log(chalk.bgGreenBright("Long Order Placed for " + pair + " at " + settings.pairs[settingsIndex].order_size + " size"));
                                 if(process.env.USE_DISCORD) {
@@ -495,15 +567,19 @@ async function scalp(pair, index) {
                             var index = tickData.findIndex(x => x.pair === pair);
                             var tickSize = tickData[index].tickSize;
                             var decimalPlaces = (tickSize.toString().split(".")[1] || []).length;
-                            const order = await linearClient.placeActiveOrder({
-                                symbol: pair,
-                                side: "Sell",
-                                order_type: "Market",
-                                qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
-                                time_in_force: "GoodTillCancel",
-                                reduce_only: false,
-                                close_on_trigger: false
-                            });
+                            if (process.env.DEBUG_MODE == "false") {
+                                const order = await linearClient.placeActiveOrder({
+                                    symbol: pair,
+                                    side: "Sell",
+                                    order_type: "Market",
+                                    qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
+                                    time_in_force: "GoodTillCancel",
+                                    reduce_only: false,
+                                    close_on_trigger: false
+                                });
+                            } else {
+                                console.log("DUMMY ORDER (SELL) - YOU ARE IN DEBUG MODE !");
+                            }
                             //console.log("Order placed: " + JSON.stringify(order, null, 2));
                             console.log(chalk.bgRedBright("Short Order Placed for " + pair + " at " + settings.pairs[settingsIndex].order_size + " size"));
                             if(process.env.USE_DISCORD) {
@@ -520,15 +596,19 @@ async function scalp(pair, index) {
                                 var index = tickData.findIndex(x => x.pair === pair);
                                 var tickSize = tickData[index].tickSize;
                                 var decimalPlaces = (tickSize.toString().split(".")[1] || []).length;
-                                const order = await linearClient.placeActiveOrder({
-                                    symbol: pair,
-                                    side: "Sell",
-                                    order_type: "Market",
-                                    qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
-                                    time_in_force: "GoodTillCancel",
-                                    reduce_only: false,
-                                    close_on_trigger: false
-                                });
+                                if (process.env.DEBUG_MODE == "false") {
+                                    const order = await linearClient.placeActiveOrder({
+                                        symbol: pair,
+                                        side: "Sell",
+                                        order_type: "Market",
+                                        qty: settings.pairs[settingsIndex].order_size.toFixed(decimalPlaces),
+                                        time_in_force: "GoodTillCancel",
+                                        reduce_only: false,
+                                        close_on_trigger: false
+                                    });
+                                } else {
+                                    console.log("DUMMY ORDER (SELL) - YOU ARE IN DEBUG MODE !");
+                                }
                                 //console.log("Order placed: " + JSON.stringify(order, null, 2));
                                 console.log(chalk.bgRedBright("Short Order Placed for " + pair + " at " + settings.pairs[settingsIndex].order_size + " size"));
                                 if(process.env.USE_DISCORD) {
@@ -698,7 +778,13 @@ async function checkOpenPositions() {
 }
 
 async function getMinTradingSize() {
-    const url = "https://api.bybit.com/v2/public/symbols";
+    var url;
+    if (process.env.USE_TESTNET == "false") {
+        url = "https://api.bybit.com/v2/public/symbols";
+    } else {
+        url = "https://api-testnet.bybit.com/v2/public/symbols";
+    }
+    
     const response = await fetch(url);
     const data = await response.json();
     var balance = await getBalance();
@@ -785,7 +871,12 @@ async function getMinTradingSize() {
 //get all symbols
 async function getSymbols() {
     try{
-        const url = "https://api.bybit.com/v2/public/symbols";
+        var url;
+        if (process.env.USE_TESTNET == "false") {
+            url = "https://api.bybit.com/v2/public/symbols";
+        } else {
+            url = "https://api-testnet.bybit.com/v2/public/symbols";
+        }
         const response = await fetch(url);
         const data = await response.json();
         //console.log(JSON.stringify(data.result[0], null, 2));
@@ -815,10 +906,12 @@ async function getSymbols() {
         return null;
     }
 }
+
 //sleep function
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
 //auto create settings.json file
 async function createSettings() {
     await getMinTradingSize();
@@ -1037,6 +1130,17 @@ async function updateSettings() {
 
 }
 
+function calculateServerRuntime(uptimeSeconds) {
+    var elapsedDays = uptimeSeconds / 86400;  //days
+    var restSeconds = uptimeSeconds % 86400;   // rest of seconds left
+    var elapsedHours = restSeconds / 3600;          // hours
+    restSeconds = restSeconds % 3600;
+    var elapsedMinutes = restSeconds / 60;          // minutes
+    var elapsedSeconds = restSeconds % 60;
+    var times = [parseInt(elapsedDays), parseInt(elapsedHours), parseInt(elapsedMinutes), parseInt(elapsedSeconds)];
+    return times;
+}
+
 //discord webhook
 function orderWebhook(symbol, amount, side, position, pnl) {
     if(process.env.USE_DISCORD) {
@@ -1049,14 +1153,14 @@ function orderWebhook(symbol, amount, side, position, pnl) {
         }
         var dir = "";
         if (side === "Buy") {
-            dir = "✅Long / ❌Short";
+            dir = "✅ Long";
             var color = '#00ff00';
         } else {
-            dir = "✅Short";
+            dir = "❌ Short";
             var color = '#ff0000';
         }
         const embed = new MessageBuilder()
-            .setTitle('New Liquidation')
+            .setTitle('New Liquidation | ' + symbol.toString() + ' | ' + dir)
             .addField('Symbol: ', symbol.toString(), true)
             .addField('Amount: ', amount.toString(), true)
             .addField('Side: ', dir, true)
@@ -1104,6 +1208,13 @@ async function reportWebhook() {
             var startingBalance = settings.startingBalance;
         }
 
+        //get current timestamp and calculate bot uptime
+        const timestampNow = moment();
+        const timeUptimeInSeconds = timestampNow.diff(timestampBotStart, 'seconds');
+        const times = calculateServerRuntime(timeUptimeInSeconds);
+        
+        // just to check if formatting is ok
+        //console.log("Duration: " + times[0] + " days, " + times[1] + " hours, " + times[2] + " minutes, " + times[3] + " sec.");
 
         //fetch balance
         var balance = await getBalance();
@@ -1129,8 +1240,8 @@ async function reportWebhook() {
                 var pnl = pnl1.toFixed(6);
                 var symbol = positions.result[i].data.symbol;
                 var size = positions.result[i].data.size;
-                var liq = positions.result[i].data.liq_price;
                 var size = size.toFixed(4);
+                var liq = positions.result[i].data.liq_price;
                 var ios = positions.result[i].data.is_isolated;
 
                 var priceFetch = await linearClient.getTickers({symbol: symbol});
@@ -1139,9 +1250,9 @@ async function reportWebhook() {
                 let side = positions.result[i].data.side;
                 var dir = "";
                 if (side === "Buy") {
-                    dir = "✅Long / ❌Short";
+                    dir = "✅ Long";                  
                 } else {
-                    dir = "❌Long / ✅Short";
+                    dir = "❌ Short";
                 }
 
                 var stop_loss = positions.result[i].data.stop_loss;
@@ -1171,26 +1282,29 @@ async function reportWebhook() {
 
         const embed = new MessageBuilder()
             .setTitle("```"+'---------------------------Bot Report---------------------------'+"```")
-            .addField('Balance: ', "```autohotkey"+'\n'+balance.toString()+"```", true)
-            .addField('Leverage: ', "```autohotkey"+'\n'+process.env.LEVERAGE.toString()+"```", true)
+            .addField('Balance: ', "```autohotkey" + '\n' + balance.toString() + "```", true)
+            .addField('Leverage: ', "```autohotkey" + '\n' + process.env.LEVERAGE.toString() + "```", true)
             //.addField('Version: ', version.commit.toString(), true)
-            .addField('Total USDT in Posi: ', "```autohotkey"+'\n'+marg.toFixed(2).toString()+"```", true)
-            .addField('Profit USDT: ', "```autohotkey"+'\n'+diff.toString()+"```", true)
-            .addField('Profit %: ', "```autohotkey"+'\n'+percentGain.toString()+"```"+'\n', true)
-            .addField('Server Time: ', "```autohotkey"+'\n'+time.toString()+"```", true)
+            .addField('Total USDT in Position: ', "```autohotkey" + '\n' + marg.toFixed(2).toString() + "```", true)
+            .addField('Profit USDT: ', "```autohotkey"+'\n' + diff.toString() + "```", true)
+            .addField('Profit %: ', "```autohotkey"+'\n' + percentGain.toString() + "```" + '\n', true)
+            .addField('Bot UpTime: ', "```autohotkey" + '\n' + times[0].toString() + " days " + times[1].toString() + " hr. " + times[2].toString() + " min. " + times[3].toString() + " sec." + "```", true)
+            .addField('ByBit Server Time: ', "```autohotkey" + '\n' + time.toString() + "```", true)
+            .addField("","",true)
+            .addField("","",true)
             .setFooter('Open Positions: ' + openPositions.toString())
             //for each position in positionList add field only 7 fields per embed
             for(var i = 0; i < positionList.length; i++) {stop_loss
                 embed.addField(positionList[i].symbol,'\n'
-                +"```autohotkey"+'\n'
-                +"Isolated: " + positionList[i].iso +'\n'
-                +"Closing Fee: " + positionList[i].fee +'\n'
-                +"Size: " + positionList[i].size +'\n'
-                +"Value in $: " + positionList[i].sizeUSD +'\n'
+                + "```autohotkey"+'\n'
+                + "Isolated: " + positionList[i].iso +'\n'
+                + "Closing Fee: " + positionList[i].fee +'\n'
+                + "Size: " + positionList[i].size +'\n'
+                + "Value in $: " + positionList[i].sizeUSD +'\n'
                 + "PnL: " + positionList[i].pnl+'\n'+"```"
-                +"```fix"+'\n'+ positionList[i].side+"```"
-                +"```autohotkey"+'\n'
-                +"Price: " + positionList[i].test +'\n'
+                + "```fix"+'\n'+ positionList[i].side+"```"
+                + "```autohotkey"+'\n'
+                + "Price: " + positionList[i].test +'\n'
                 + "Entry Price: " + positionList[i].price+'\n'
                 + "Stop Loss: " + positionList[i].stop_loss+'\n'
                 + "Take Profit: " + positionList[i].take_profit+'\n'
@@ -1211,6 +1325,7 @@ async function reportWebhook() {
 
 async function main() {
     console.log("Starting Lick Hunter!");
+    reportWebhook();
     try{
         pairs = await getSymbols();
 
@@ -1260,8 +1375,6 @@ async function main() {
     }
 
 }
-
-
 
 try {
     main();
