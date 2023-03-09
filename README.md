@@ -57,6 +57,14 @@ npm install
 ```
 
 ```
+npm install node-cron
+```
+
+```
+npm install sqlite3
+```
+
+```
 cp example.env .env
 ```
 
