@@ -1,1190 +1,1196 @@
 [
     {
         "pair": "10000NFTUSDT",
-        "minOrderSize": 24.31316131836735,
-        "maxPositionSize": 3646.974197755102,
+        "minOrderSize": 258.341881247216,
+        "maxPositionSize": 2583.41881247216,
         "tickSize": "0.000005"
     },
     {
         "pair": "1000BONKUSDT",
-        "minOrderSize": 171.41653303597124,
-        "maxPositionSize": 25712.479955395684,
+        "minOrderSize": 2411.548953846154,
+        "maxPositionSize": 24115.489538461537,
         "tickSize": "0.000001"
     },
     {
         "pair": "1000BTTUSDT",
-        "minOrderSize": 165.0062194736842,
-        "maxPositionSize": 24750.93292105263,
+        "minOrderSize": 1728.696045901639,
+        "maxPositionSize": 17286.96045901639,
         "tickSize": "0.000001"
     },
     {
         "pair": "1000FLOKIUSDT",
-        "minOrderSize": 2.7380944716157205,
-        "maxPositionSize": 410.714170742358,
+        "minOrderSize": 30.301855977011492,
+        "maxPositionSize": 303.0185597701149,
         "tickSize": "0.00001"
     },
     {
         "pair": "1000LUNCUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 102.99811855331413,
+        "minOrderSize": 8.405471353623188,
+        "maxPositionSize": 84.05471353623187,
         "tickSize": "0.0001"
     },
     {
         "pair": "1000XECUSDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 526.2124136925795,
+        "minOrderSize": 39.293870149051486,
+        "maxPositionSize": 392.93870149051486,
         "tickSize": "0.00001"
     },
     {
         "pair": "1INCHUSDT",
-        "minOrderSize": 0.21236094556149732,
-        "maxPositionSize": 31.854141834224592,
+        "minOrderSize": 2.419092902606882,
+        "maxPositionSize": 24.190929026068822,
         "tickSize": "0.0005"
     },
     {
         "pair": "AAVEUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.22337716961249998,
+        "minOrderSize": 0.015822603284681488,
+        "maxPositionSize": 0.15822603284681488,
         "tickSize": "0.01"
     },
     {
         "pair": "ACHUSDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 527.5795219945677,
+        "minOrderSize": 43.23350901229966,
+        "maxPositionSize": 432.33509012299663,
         "tickSize": "0.000001"
     },
     {
         "pair": "ADAUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 50.88318214407744,
+        "minOrderSize": 3.639645581424537,
+        "maxPositionSize": 36.39645581424537,
         "tickSize": "0.0001"
     },
     {
         "pair": "AGIXUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 35.274720823134615,
+        "minOrderSize": 3.177088597096686,
+        "maxPositionSize": 31.77088597096686,
         "tickSize": "0.00005"
     },
     {
         "pair": "AGLDUSDT",
-        "minOrderSize": 0.20908123983853985,
-        "maxPositionSize": 31.362185975780974,
+        "minOrderSize": 2.8690453791738806,
+        "maxPositionSize": 28.690453791738804,
         "tickSize": "0.0001"
     },
     {
         "pair": "AKROUSDT",
-        "minOrderSize": 100,
-        "maxPositionSize": 3667.9338195812807,
+        "minOrderSize": 241.5063599417031,
+        "maxPositionSize": 2415.063599417031,
         "tickSize": "0.000001"
     },
     {
         "pair": "ALGOUSDT",
-        "minOrderSize": 0.48925868772073927,
-        "maxPositionSize": 73.38880315811087,
+        "minOrderSize": 5.694428310260187,
+        "maxPositionSize": 56.944283102601865,
         "tickSize": "0.0001"
     },
     {
         "pair": "ALICEUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 9.633516748787061,
+        "minOrderSize": 0.7944897580821918,
+        "maxPositionSize": 7.944897580821918,
         "tickSize": "0.005"
     },
     {
         "pair": "ALPHAUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 132.61724355473098,
+        "minOrderSize": 11.669567875251508,
+        "maxPositionSize": 116.69567875251508,
         "tickSize": "0.00005"
     },
     {
         "pair": "ANKRUSDT",
-        "minOrderSize": 3.1930981093540605,
-        "maxPositionSize": 478.964716403109,
+        "minOrderSize": 38.52391387578877,
+        "maxPositionSize": 385.2391387578877,
         "tickSize": "0.00001"
     },
     {
         "pair": "ANTUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.680438717383177,
+        "minOrderSize": 0.523681736704289,
+        "maxPositionSize": 5.23681736704289,
         "tickSize": "0.005"
     },
     {
         "pair": "APEUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 3.5783287082499,
+        "minOrderSize": 0.2603715032098765,
+        "maxPositionSize": 2.603715032098765,
         "tickSize": "0.001"
     },
     {
         "pair": "API3USDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 11.581447549578742,
+        "minOrderSize": 0.8624201091449814,
+        "maxPositionSize": 8.624201091449814,
         "tickSize": "0.001"
     },
     {
         "pair": "APTUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 1.3946364044952588,
+        "minOrderSize": 0.10862019353872085,
+        "maxPositionSize": 1.0862019353872086,
         "tickSize": "0.0005"
     },
     {
         "pair": "ARPAUSDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 434.16359497084545,
+        "minOrderSize": 32.638014822734945,
+        "maxPositionSize": 326.3801482273494,
         "tickSize": "0.00001"
     },
     {
         "pair": "ARUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 1.8229290593695804,
+        "minOrderSize": 0.1496330039731682,
+        "maxPositionSize": 1.4963300397316819,
         "tickSize": "0.001"
     },
     {
         "pair": "ASTRUSDT",
-        "minOrderSize": 1.566940555833224,
-        "maxPositionSize": 235.04108337498354,
+        "minOrderSize": 18.865659051801252,
+        "maxPositionSize": 188.65659051801254,
         "tickSize": "0.000005"
     },
     {
         "pair": "ATOMUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 1.4458069230582524,
+        "minOrderSize": 0.10646673215236346,
+        "maxPositionSize": 1.0646673215236346,
         "tickSize": "0.001"
     },
     {
         "pair": "AUDIOUSDT",
-        "minOrderSize": 0.38920121025808563,
-        "maxPositionSize": 58.38018153871283,
+        "minOrderSize": 4.769552001644737,
+        "maxPositionSize": 47.69552001644737,
         "tickSize": "0.0001"
     },
     {
         "pair": "AVAXUSDT",
         "minOrderSize": 0.1,
-        "maxPositionSize": 1.0308724297086818,
+        "maxPositionSize": 0.7546877337670788,
         "tickSize": "0.005"
     },
     {
         "pair": "AXSUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 1.8443774970585198,
+        "minOrderSize": 0.14517585066332916,
+        "maxPositionSize": 1.4517585066332916,
         "tickSize": "0.001"
     },
     {
         "pair": "BAKEUSDT",
-        "minOrderSize": 0.5452379426086956,
-        "maxPositionSize": 81.78569139130434,
+        "minOrderSize": 6.462145107520891,
+        "maxPositionSize": 64.62145107520891,
         "tickSize": "0.0005"
     },
     {
         "pair": "BALUSDT",
-        "minOrderSize": 0.016958646328825624,
-        "maxPositionSize": 2.543796949323843,
+        "minOrderSize": 0.1883043907142857,
+        "maxPositionSize": 1.883043907142857,
         "tickSize": "0.005"
     },
     {
         "pair": "BANDUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 8.9350867845,
+        "minOrderSize": 0.7286149791457286,
+        "maxPositionSize": 7.2861497914572855,
         "tickSize": "0.001"
     },
     {
         "pair": "BATUSDT",
-        "minOrderSize": 0.4115181017616581,
-        "maxPositionSize": 61.72771526424871,
+        "minOrderSize": 4.813091480497925,
+        "maxPositionSize": 48.13091480497925,
         "tickSize": "0.0005"
     },
     {
         "pair": "BCHUSDT",
         "minOrderSize": 0.01,
-        "maxPositionSize": 0.1354827412357847,
+        "maxPositionSize": 0.09867758798809018,
         "tickSize": "0.05"
     },
     {
         "pair": "BELUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 23.32007512592979,
+        "minOrderSize": 1.9068799059674504,
+        "maxPositionSize": 19.068799059674504,
         "tickSize": "0.0001"
     },
     {
         "pair": "BICOUSDT",
-        "minOrderSize": 0.26444947937846836,
-        "maxPositionSize": 39.66742190677025,
+        "minOrderSize": 3.1762186385542166,
+        "maxPositionSize": 31.762186385542165,
         "tickSize": "0.0001"
     },
     {
         "pair": "BITUSDT",
-        "minOrderSize": 0.20765991016210564,
-        "maxPositionSize": 31.148986524315845,
+        "minOrderSize": 2.2650947994532316,
+        "maxPositionSize": 22.650947994532316,
         "tickSize": "0.0001"
     },
     {
         "pair": "BLURUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 22.45278749717301,
+        "minOrderSize": 2.0002673681669254,
+        "maxPositionSize": 20.002673681669254,
         "tickSize": "0.0001"
     },
     {
         "pair": "BLZUSDT",
-        "minOrderSize": 1.061048187210545,
-        "maxPositionSize": 159.15722808158174,
+        "minOrderSize": 14.005735894711421,
+        "maxPositionSize": 140.0573589471142,
         "tickSize": "0.00001"
     },
     {
         "pair": "BNBUSDT",
         "minOrderSize": 0.01,
-        "maxPositionSize": 0.059926806066398386,
+        "maxPositionSize": 0.04012990993945684,
         "tickSize": "0.05"
     },
     {
         "pair": "BNXUSDT",
-        "minOrderSize": 0.11801336350668648,
-        "maxPositionSize": 17.70200452600297,
+        "minOrderSize": 1.6847567854756718,
+        "maxPositionSize": 16.84756785475672,
         "tickSize": "0.0005"
     },
     {
         "pair": "BOBAUSDT",
-        "minOrderSize": 0.4347180823207444,
-        "maxPositionSize": 65.20771234811166,
+        "minOrderSize": 5.319674601238248,
+        "maxPositionSize": 53.19674601238248,
         "tickSize": "0.00005"
     },
     {
         "pair": "BSVUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.428541332589928,
+        "minOrderSize": 0.031998759911724135,
+        "maxPositionSize": 0.31998759911724134,
         "tickSize": "0.05"
     },
     {
         "pair": "BSWUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 82.3889975518672,
+        "minOrderSize": 6.114681322087506,
+        "maxPositionSize": 61.14681322087506,
         "tickSize": "0.0001"
     },
     {
         "pair": "BTCUSDT",
         "minOrderSize": 0.001,
-        "maxPositionSize": 0.0007636826311538461,
+        "maxPositionSize": 0.0005336365273637334,
         "tickSize": "0.10"
     },
     {
         "pair": "BUSDUSDT",
-        "minOrderSize": 0.11920601406844107,
-        "maxPositionSize": 17.88090211026616,
+        "minOrderSize": 1.1603031377413222,
+        "maxPositionSize": 11.603031377413222,
         "tickSize": "0.0001"
     },
     {
         "pair": "C98USDT",
-        "minOrderSize": 0.440423254935305,
-        "maxPositionSize": 66.06348824029574,
+        "minOrderSize": 5.236817367042889,
+        "maxPositionSize": 52.36817367042889,
         "tickSize": "0.0005"
     },
     {
         "pair": "CEEKUSDT",
-        "minOrderSize": 1.1340741595430748,
-        "maxPositionSize": 170.11112393146118,
+        "minOrderSize": 13.092043417607224,
+        "maxPositionSize": 130.92043417607223,
         "tickSize": "0.00005"
     },
     {
         "pair": "CELOUSDT",
-        "minOrderSize": 0.15927070917112301,
-        "maxPositionSize": 23.890606375668447,
+        "minOrderSize": 1.9204553754966887,
+        "maxPositionSize": 19.204553754966888,
         "tickSize": "0.001"
     },
     {
         "pair": "CELRUSDT",
-        "minOrderSize": 5.76922471961259,
-        "maxPositionSize": 865.3837079418885,
+        "minOrderSize": 72.497190425,
+        "maxPositionSize": 724.97190425,
         "tickSize": "0.00005"
     },
     {
         "pair": "CFXUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 79.46890900965002,
+        "minOrderSize": 6.115003673361801,
+        "maxPositionSize": 61.15003673361801,
         "tickSize": "0.00001"
     },
     {
         "pair": "CHRUSDT",
-        "minOrderSize": 0.6761321819523269,
-        "maxPositionSize": 101.41982729284904,
+        "minOrderSize": 8.005210812974465,
+        "maxPositionSize": 80.05210812974465,
         "tickSize": "0.0001"
     },
     {
         "pair": "CHZUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 132.27367556624722,
+        "minOrderSize": 10.301554589698044,
+        "maxPositionSize": 103.01554589698044,
         "tickSize": "0.00005"
     },
     {
         "pair": "CKBUSDT",
-        "minOrderSize": 23.708356310447762,
-        "maxPositionSize": 3556.253446567164,
+        "minOrderSize": 289.2655977057357,
+        "maxPositionSize": 2892.6559770573567,
         "tickSize": "0.000005"
     },
     {
         "pair": "COCOSUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 9.392995305650459,
+        "minOrderSize": 0.8188881375220614,
+        "maxPositionSize": 8.188881375220614,
         "tickSize": "0.0005"
     },
     {
         "pair": "COMPUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.3606493152169526,
+        "minOrderSize": 0.02801823784541063,
+        "maxPositionSize": 0.28018237845410626,
         "tickSize": "0.05"
     },
     {
         "pair": "COREUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.035181887537994,
+        "minOrderSize": 0.42661090356748804,
+        "maxPositionSize": 4.26610903567488,
         "tickSize": "0.0005"
     },
     {
         "pair": "COTIUSDT",
-        "minOrderSize": 1.354878772432617,
-        "maxPositionSize": 203.23181586489252,
+        "minOrderSize": 15.643358689143628,
+        "maxPositionSize": 156.43358689143628,
         "tickSize": "0.00001"
     },
     {
         "pair": "CREAMUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 1.4838639515901353,
+        "minOrderSize": 0.10817448911685161,
+        "maxPositionSize": 1.0817448911685161,
         "tickSize": "0.001"
     },
     {
         "pair": "CROUSDT",
-        "minOrderSize": 1.5441930066104992,
-        "maxPositionSize": 231.62895099157484,
+        "minOrderSize": 17.248402182899625,
+        "maxPositionSize": 172.48402182899625,
         "tickSize": "0.00005"
     },
     {
         "pair": "CRVUSDT",
-        "minOrderSize": 0.11901547498501501,
-        "maxPositionSize": 17.852321247752247,
+        "minOrderSize": 1.2945926861607142,
+        "maxPositionSize": 12.945926861607141,
         "tickSize": "0.001"
     },
     {
         "pair": "CTCUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 36.34734784704566,
+        "minOrderSize": 2.9104379545853716,
+        "maxPositionSize": 29.104379545853718,
         "tickSize": "0.00005"
     },
     {
         "pair": "CTKUSDT",
-        "minOrderSize": 0.14551666112128986,
-        "maxPositionSize": 21.827499168193476,
+        "minOrderSize": 1.5887618775510204,
+        "maxPositionSize": 15.887618775510203,
         "tickSize": "0.0001"
     },
     {
         "pair": "CTSIUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 109.63296668098158,
+        "minOrderSize": 8.724746497179389,
+        "maxPositionSize": 87.24746497179389,
         "tickSize": "0.00005"
     },
     {
         "pair": "CVCUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 142.27845198248409,
+        "minOrderSize": 11.803755437061158,
+        "maxPositionSize": 118.03755437061157,
         "tickSize": "0.00001"
     },
     {
         "pair": "CVXUSDT",
-        "minOrderSize": 0.019872308667222685,
-        "maxPositionSize": 2.9808463000834022,
+        "minOrderSize": 0.21244597926739925,
+        "maxPositionSize": 2.1244597926739925,
         "tickSize": "0.005"
     },
     {
         "pair": "DARUSDT",
-        "minOrderSize": 0.5797298805839417,
-        "maxPositionSize": 86.95948208759123,
+        "minOrderSize": 6.945838603592813,
+        "maxPositionSize": 69.45838603592813,
         "tickSize": "0.0005"
     },
     {
         "pair": "DASHUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.2449646822344071,
+        "minOrderSize": 0.01962698894754653,
+        "maxPositionSize": 0.19626988947546528,
         "tickSize": "0.05"
     },
     {
         "pair": "DENTUSDT",
-        "minOrderSize": 104.503939,
-        "maxPositionSize": 15675.590849999999,
+        "minOrderSize": 1208.2865070833332,
+        "maxPositionSize": 12082.865070833332,
         "tickSize": "0.000001"
     },
     {
         "pair": "DGBUSDT",
-        "minOrderSize": 10.703907498652292,
-        "maxPositionSize": 1605.5861247978437,
+        "minOrderSize": 118.60481051124744,
+        "maxPositionSize": 1186.0481051124743,
         "tickSize": "0.00001"
     },
     {
         "pair": "DODOUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 77.57835280659864,
+        "minOrderSize": 6.600028715789474,
+        "maxPositionSize": 66.00028715789475,
         "tickSize": "0.00005"
     },
     {
         "pair": "DOGEUSDT",
-        "minOrderSize": 1.4782788244199034,
-        "maxPositionSize": 221.7418236629855,
+        "minOrderSize": 16.114963139761045,
+        "maxPositionSize": 161.14963139761045,
         "tickSize": "0.00001"
     },
     {
         "pair": "DOTUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 2.8053647675039244,
+        "minOrderSize": 0.20570226047171483,
+        "maxPositionSize": 2.0570226047171483,
         "tickSize": "0.001"
     },
     {
         "pair": "DUSKUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 80.73630418812685,
+        "minOrderSize": 6.814045977794748,
+        "maxPositionSize": 68.14045977794748,
         "tickSize": "0.00001"
     },
     {
         "pair": "DYDXUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 5.786973306023315,
+        "minOrderSize": 0.575660072853598,
+        "maxPositionSize": 5.75660072853598,
         "tickSize": "0.001"
     },
     {
         "pair": "EGLDUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.381841315576923,
+        "minOrderSize": 0.02907155505764411,
+        "maxPositionSize": 0.2907155505764411,
         "tickSize": "0.05"
     },
     {
         "pair": "ENJUSDT",
-        "minOrderSize": 0.2575880874810811,
-        "maxPositionSize": 38.638213122162156,
+        "minOrderSize": 2.989574862886598,
+        "maxPositionSize": 29.89574862886598,
         "tickSize": "0.0005"
     },
     {
         "pair": "ENSUSDT",
         "minOrderSize": 0.1,
-        "maxPositionSize": 1.1455239467307692,
+        "maxPositionSize": 0.8888544419923371,
         "tickSize": "0.01"
     },
     {
         "pair": "EOSUSDT",
-        "minOrderSize": 0.10165058912969284,
-        "maxPositionSize": 15.247588369453924,
+        "minOrderSize": 0.997381811521926,
+        "maxPositionSize": 9.97381811521926,
         "tickSize": "0.001"
     },
     {
         "pair": "ETCUSDT",
         "minOrderSize": 0.1,
-        "maxPositionSize": 0.8591429600480769,
+        "maxPositionSize": 0.6316117869861149,
         "tickSize": "0.005"
     },
     {
         "pair": "ETHUSDT",
         "minOrderSize": 0.01,
-        "maxPositionSize": 0.010891200926992485,
+        "maxPositionSize": 0.007539470310885207,
         "tickSize": "0.01"
     },
     {
         "pair": "ETHWUSDT",
-        "minOrderSize": 0.032285769772357725,
-        "maxPositionSize": 4.842865465853658,
+        "minOrderSize": 0.3547263140061162,
+        "maxPositionSize": 3.547263140061162,
         "tickSize": "0.001"
     },
     {
         "pair": "FETUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 38.907410339647285,
+        "minOrderSize": 3.3432916754575586,
+        "maxPositionSize": 33.43291675457559,
         "tickSize": "0.00005"
     },
     {
         "pair": "FILUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 2.5962768515182333,
+        "minOrderSize": 0.1957730036793249,
+        "maxPositionSize": 1.957730036793249,
         "tickSize": "0.001"
     },
     {
         "pair": "FITFIUSDT",
-        "minOrderSize": 4.7653796184,
-        "maxPositionSize": 714.80694276,
+        "minOrderSize": 69.45838603592814,
+        "maxPositionSize": 694.5838603592814,
         "tickSize": "0.00005"
     },
     {
         "pair": "FLMUSDT",
-        "minOrderSize": 1.1118477877741484,
-        "maxPositionSize": 166.77716816612224,
+        "minOrderSize": 13.099435875776397,
+        "maxPositionSize": 130.99435875776396,
         "tickSize": "0.00005"
     },
     {
         "pair": "FLOWUSDT",
-        "minOrderSize": 0.1043209198423818,
-        "maxPositionSize": 15.648137976357269,
+        "minOrderSize": 1.211441302140992,
+        "maxPositionSize": 12.11441302140992,
         "tickSize": "0.0005"
     },
     {
         "pair": "FTMUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 40.05867197713517,
+        "minOrderSize": 3.1893182480065985,
+        "maxPositionSize": 31.893182480065985,
         "tickSize": "0.0001"
     },
     {
         "pair": "FXSUSDT",
-        "minOrderSize": 0.010357269329276246,
-        "maxPositionSize": 1.5535903993914366,
+        "minOrderSize": 0.13111281189103652,
+        "maxPositionSize": 1.3111281189103652,
         "tickSize": "0.0005"
     },
     {
         "pair": "GALAUSDT",
-        "minOrderSize": 2.9858268285714287,
-        "maxPositionSize": 447.87402428571426,
+        "minOrderSize": 33.505345083766606,
+        "maxPositionSize": 335.05345083766605,
         "tickSize": "0.00001"
     },
     {
         "pair": "GALUSDT",
-        "minOrderSize": 0.06136208625289725,
-        "maxPositionSize": 9.204312937934585,
+        "minOrderSize": 0.7666589866490416,
+        "maxPositionSize": 7.666589866490416,
         "tickSize": "0.0005"
     },
     {
         "pair": "GFTUSDT",
-        "minOrderSize": 1.748121650183419,
-        "maxPositionSize": 262.2182475275128,
+        "minOrderSize": 21.186393548858447,
+        "maxPositionSize": 211.86393548858447,
         "tickSize": "0.00005"
     },
     {
         "pair": "GLMRUSDT",
-        "minOrderSize": 0.2810770094608942,
-        "maxPositionSize": 42.16155141913412,
+        "minOrderSize": 3.0215031174785096,
+        "maxPositionSize": 30.215031174785096,
         "tickSize": "0.00005"
     },
     {
         "pair": "GMTUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 42.77207651747247,
+        "minOrderSize": 3.4573920918032783,
+        "maxPositionSize": 34.57392091803278,
         "tickSize": "0.0001"
     },
     {
         "pair": "GMXUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.23818958439186935,
+        "minOrderSize": 0.017060671375202237,
+        "maxPositionSize": 0.17060671375202235,
         "tickSize": "0.005"
     },
     {
         "pair": "GRTUSDT",
-        "minOrderSize": 0.7757161769761688,
-        "maxPositionSize": 116.3574265464253,
+        "minOrderSize": 9.209647056768558,
+        "maxPositionSize": 92.09647056768559,
         "tickSize": "0.00001"
     },
     {
         "pair": "GTCUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 8.489393619477434,
+        "minOrderSize": 0.6704942467052023,
+        "maxPositionSize": 6.704942467052023,
         "tickSize": "0.005"
     },
     {
         "pair": "HBARUSDT",
-        "minOrderSize": 1.7530089826368451,
-        "maxPositionSize": 262.95134739552674,
+        "minOrderSize": 19.0687990596745,
+        "maxPositionSize": 190.687990596745,
         "tickSize": "0.00001"
     },
     {
         "pair": "HIGHUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.401638391187533,
+        "minOrderSize": 0.5725345739387957,
+        "maxPositionSize": 5.725345739387957,
         "tickSize": "0.0005"
     },
     {
         "pair": "HNTUSDT",
-        "minOrderSize": 0.04492250771493213,
-        "maxPositionSize": 6.738376157239818,
+        "minOrderSize": 0.5301439884826324,
+        "maxPositionSize": 5.3014398848263244,
         "tickSize": "0.001"
     },
     {
         "pair": "HOOKUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 7.570503524253336,
+        "minOrderSize": 0.661697117398745,
+        "maxPositionSize": 6.616971173987451,
         "tickSize": "0.0005"
     },
     {
         "pair": "HOTUSDT",
-        "minOrderSize": 100,
-        "maxPositionSize": 8798.706828655835,
+        "minOrderSize": 685.5526281323877,
+        "maxPositionSize": 6855.526281323877,
         "tickSize": "0.000001"
     },
     {
         "pair": "ICPUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 3.0247416332092074,
+        "minOrderSize": 0.225102861789249,
+        "maxPositionSize": 2.25102861789249,
         "tickSize": "0.001"
     },
     {
         "pair": "ICXUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 71.50929799519807,
+        "minOrderSize": 5.719699441814595,
+        "maxPositionSize": 57.19699441814595,
         "tickSize": "0.0001"
     },
     {
         "pair": "ILVUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.22282011931421444,
+        "minOrderSize": 0.017666083563813585,
+        "maxPositionSize": 0.17666083563813584,
         "tickSize": "0.005"
     },
     {
         "pair": "IMXUSDT",
-        "minOrderSize": 0.12118247427525176,
-        "maxPositionSize": 18.17737114128776,
+        "minOrderSize": 1.1939835787956767,
+        "maxPositionSize": 11.939835787956767,
         "tickSize": "0.0001"
     },
     {
         "pair": "INJUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 4.935148734879867,
+        "minOrderSize": 0.3979262596226415,
+        "maxPositionSize": 3.979262596226415,
         "tickSize": "0.0005"
     },
     {
         "pair": "IOSTUSDT",
-        "minOrderSize": 10.010460504159315,
-        "maxPositionSize": 1501.569075623897,
+        "minOrderSize": 121.69062597566092,
+        "maxPositionSize": 1216.9062597566092,
         "tickSize": "0.000001"
     },
     {
         "pair": "IOTAUSDT",
-        "minOrderSize": 0.4902653928395062,
-        "maxPositionSize": 73.53980892592591,
+        "minOrderSize": 5.6445501060827254,
+        "maxPositionSize": 56.445501060827254,
         "tickSize": "0.0005"
     },
     {
         "pair": "IOTXUSDT",
-        "minOrderSize": 4.3880106983425415,
-        "maxPositionSize": 658.2016047513811,
+        "minOrderSize": 49.67687566595289,
+        "maxPositionSize": 496.7687566595289,
         "tickSize": "0.00005"
     },
     {
         "pair": "JASMYUSDT",
-        "minOrderSize": 20.28857126362398,
-        "maxPositionSize": 3043.285689543597,
+        "minOrderSize": 225.14655411490682,
+        "maxPositionSize": 2251.465541149068,
         "tickSize": "0.000001"
     },
     {
         "pair": "JSTUSDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 620.9233345726198,
+        "minOrderSize": 45.59571724842767,
+        "maxPositionSize": 455.95717248427667,
         "tickSize": "0.00001"
     },
     {
         "pair": "KAVAUSDT",
-        "minOrderSize": 0.13564213874530343,
-        "maxPositionSize": 20.346320811795515,
+        "minOrderSize": 1.350040790037244,
+        "maxPositionSize": 13.50040790037244,
         "tickSize": "0.0001"
     },
     {
         "pair": "KDAUSDT",
-        "minOrderSize": 0.10813696147771627,
-        "maxPositionSize": 16.220544221657438,
+        "minOrderSize": 1.2020259552331607,
+        "maxPositionSize": 12.020259552331607,
         "tickSize": "0.0001"
     },
     {
         "pair": "KLAYUSDT",
-        "minOrderSize": 0.4608684350483559,
-        "maxPositionSize": 69.13026525725337,
+        "minOrderSize": 5.39513975255814,
+        "maxPositionSize": 53.9513975255814,
         "tickSize": "0.0005"
     },
     {
         "pair": "KNCUSDT",
-        "minOrderSize": 0.14496774210270139,
-        "maxPositionSize": 21.74516131540521,
+        "minOrderSize": 1.699069938186612,
+        "maxPositionSize": 16.99069938186612,
         "tickSize": "0.0001"
     },
     {
         "pair": "KSMUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.48167583743935305,
+        "minOrderSize": 0.03630532227856025,
+        "maxPositionSize": 0.36305322278560254,
         "tickSize": "0.05"
     },
     {
         "pair": "LDOUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.19416761490468,
+        "minOrderSize": 0.4891229377187434,
+        "maxPositionSize": 4.891229377187434,
         "tickSize": "0.0005"
     },
     {
         "pair": "LINAUSDT",
-        "minOrderSize": 12.29458105882353,
-        "maxPositionSize": 1844.187158823529,
+        "minOrderSize": 147.57697796437657,
+        "maxPositionSize": 1475.7697796437656,
         "tickSize": "0.00001"
     },
     {
         "pair": "LINKUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 2.4503186026326613,
+        "minOrderSize": 0.1755114308972613,
+        "maxPositionSize": 1.755114308972613,
         "tickSize": "0.001"
     },
     {
         "pair": "LITUSDT",
-        "minOrderSize": 0.10165058912969284,
-        "maxPositionSize": 15.247588369453924,
+        "minOrderSize": 1.1788161044715446,
+        "maxPositionSize": 11.788161044715446,
         "tickSize": "0.001"
     },
     {
         "pair": "LOOKSUSDT",
-        "minOrderSize": 0.6145704950219242,
-        "maxPositionSize": 92.18557425328862,
+        "minOrderSize": 7.715031904223477,
+        "maxPositionSize": 77.15031904223477,
         "tickSize": "0.00005"
     },
     {
         "pair": "LPTUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 2.5279634416466257,
+        "minOrderSize": 0.20240011285988482,
+        "maxPositionSize": 2.024001128598848,
         "tickSize": "0.001"
     },
     {
         "pair": "LRCUSDT",
-        "minOrderSize": 0.3396080115735462,
-        "maxPositionSize": 50.94120173603193,
+        "minOrderSize": 3.8498342077663454,
+        "maxPositionSize": 38.49834207766345,
         "tickSize": "0.0001"
     },
     {
         "pair": "LTCUSDT",
         "minOrderSize": 0.1,
-        "maxPositionSize": 0.18525993747667424,
+        "maxPositionSize": 0.1395854448616125,
         "tickSize": "0.01"
     },
     {
         "pair": "LUNA2USDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 10.21736624871355,
+        "minOrderSize": 0.8244172329779672,
+        "maxPositionSize": 8.244172329779673,
         "tickSize": "0.001"
     },
     {
         "pair": "MAGICUSDT",
         "minOrderSize": 1,
-        "maxPositionSize": 11.547769673021,
+        "maxPositionSize": 9.144304665352777,
         "tickSize": "0.0001"
     },
     {
         "pair": "MANAUSDT",
-        "minOrderSize": 0.18865319154394303,
-        "maxPositionSize": 28.29797873159145,
+        "minOrderSize": 2.104036,
+        "maxPositionSize": 21.04036,
         "tickSize": "0.0001"
     },
     {
         "pair": "MASKUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 4.625983320994046,
+        "minOrderSize": 0.3558144315337423,
+        "maxPositionSize": 3.5581443153374233,
         "tickSize": "0.001"
     },
     {
         "pair": "MATICUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 14.791965540104295,
+        "minOrderSize": 1.0962622122672714,
+        "maxPositionSize": 10.962622122672714,
         "tickSize": "0.0001"
     },
     {
         "pair": "MINAUSDT",
-        "minOrderSize": 0.11913449046,
-        "maxPositionSize": 17.870173569,
+        "minOrderSize": 1.635813068396559,
+        "maxPositionSize": 16.35813068396559,
         "tickSize": "0.0001"
     },
     {
         "pair": "MKRUSDT",
-        "minOrderSize": 0.001,
-        "maxPositionSize": 0.020067572789444134,
+        "minOrderSize": 0.0013527172557434401,
+        "maxPositionSize": 0.013527172557434401,
         "tickSize": "0.5"
     },
     {
         "pair": "MTLUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 14.493247014598538,
+        "minOrderSize": 1.0868125614166588,
+        "maxPositionSize": 10.868125614166589,
         "tickSize": "0.0001"
     },
     {
         "pair": "NEARUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 7.952903234979973,
+        "minOrderSize": 0.6209609458244111,
+        "maxPositionSize": 6.209609458244111,
         "tickSize": "0.001"
     },
     {
         "pair": "NEOUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 1.4767518030741258,
+        "minOrderSize": 0.10944004592886121,
+        "maxPositionSize": 1.094400459288612,
         "tickSize": "0.001"
     },
     {
         "pair": "NKNUSDT",
-        "minOrderSize": 1.0125317904130546,
-        "maxPositionSize": 151.87976856195817,
+        "minOrderSize": 11.714351108866895,
+        "maxPositionSize": 117.14351108866894,
         "tickSize": "0.00001"
     },
     {
         "pair": "OCEANUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 44.73134810763454,
+        "minOrderSize": 3.4833484888888884,
+        "maxPositionSize": 34.83348488888888,
         "tickSize": "0.0001"
     },
     {
         "pair": "OGNUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 133.45910058999254,
+        "minOrderSize": 10.256012792219273,
+        "maxPositionSize": 102.56012792219273,
         "tickSize": "0.0001"
     },
     {
         "pair": "OMGUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 10.681514386730424,
+        "minOrderSize": 0.8454482848396501,
+        "maxPositionSize": 8.4544828483965,
         "tickSize": "0.001"
     },
     {
         "pair": "ONEUSDT",
-        "minOrderSize": 5.5722399653882135,
-        "maxPositionSize": 835.8359948082319,
+        "minOrderSize": 67.43924690697673,
+        "maxPositionSize": 674.3924690697673,
         "tickSize": "0.00001"
     },
     {
         "pair": "ONTUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 72.02810789600967,
+        "minOrderSize": 5.4406897129455905,
+        "maxPositionSize": 54.406897129455906,
         "tickSize": "0.00005"
     },
     {
         "pair": "OPUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.630370128005342,
+        "minOrderSize": 0.5140049837373155,
+        "maxPositionSize": 5.140049837373155,
         "tickSize": "0.0001"
     },
     {
         "pair": "PAXGUSDT",
         "minOrderSize": 0.001,
-        "maxPositionSize": 0.00980799866575192,
+        "maxPositionSize": 0.006419231028223575,
         "tickSize": "1"
     },
     {
         "pair": "PEOPLEUSDT",
-        "minOrderSize": 4.5384567794285715,
-        "maxPositionSize": 680.7685169142858,
+        "minOrderSize": 57.566007285359795,
+        "maxPositionSize": 575.660072853598,
         "tickSize": "0.00005"
     },
     {
         "pair": "QTUMUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 5.515485669444443,
+        "minOrderSize": 0.41206218358792185,
+        "maxPositionSize": 4.120621835879218,
         "tickSize": "0.005"
     },
     {
         "pair": "REEFUSDT",
-        "minOrderSize": 36.76990446296297,
-        "maxPositionSize": 5515.485669444444,
+        "minOrderSize": 432.8190473134328,
+        "maxPositionSize": 4328.190473134328,
         "tickSize": "0.000005"
     },
     {
         "pair": "RENUSDT",
-        "minOrderSize": 0.9696767903304575,
-        "maxPositionSize": 145.45151854956862,
+        "minOrderSize": 11.414633406809683,
+        "maxPositionSize": 114.14633406809683,
         "tickSize": "0.00001"
     },
     {
         "pair": "REQUSDT",
-        "minOrderSize": 1.05634412537684,
-        "maxPositionSize": 158.45161880652594,
+        "minOrderSize": 12.401957091842188,
+        "maxPositionSize": 124.01957091842189,
         "tickSize": "0.00001"
     },
     {
         "pair": "RNDRUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 12.15327364594668,
+        "minOrderSize": 1.0457111082262789,
+        "maxPositionSize": 10.457111082262788,
         "tickSize": "0.00005"
     },
     {
         "pair": "ROSEUSDT",
-        "minOrderSize": 1.8571237795791116,
-        "maxPositionSize": 278.5685669368667,
+        "minOrderSize": 21.894206243865607,
+        "maxPositionSize": 218.94206243865608,
         "tickSize": "0.00001"
     },
     {
         "pair": "RPLUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.40701909962418853,
+        "minOrderSize": 0.0313925587767253,
+        "maxPositionSize": 0.31392558776725304,
         "tickSize": "0.005"
     },
     {
         "pair": "RSRUSDT",
-        "minOrderSize": 23.647179527590314,
-        "maxPositionSize": 3547.076929138547,
+        "minOrderSize": 299.4978174025303,
+        "maxPositionSize": 2994.978174025303,
         "tickSize": "0.000001"
     },
     {
         "pair": "RSS3USDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 113.93161344596749,
+        "minOrderSize": 8.525946687247336,
+        "maxPositionSize": 85.25946687247335,
         "tickSize": "0.00005"
     },
     {
         "pair": "RUNEUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 10.956574843041079,
+        "minOrderSize": 0.8479203558479531,
+        "maxPositionSize": 8.479203558479531,
         "tickSize": "0.001"
     },
     {
         "pair": "RVNUSDT",
-        "minOrderSize": 4.004520687731093,
-        "maxPositionSize": 600.6781031596638,
+        "minOrderSize": 47.152644178861784,
+        "maxPositionSize": 471.52644178861783,
         "tickSize": "0.00005"
     },
     {
         "pair": "SANDUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 26.118347806197015,
+        "minOrderSize": 2.018015043145442,
+        "maxPositionSize": 20.180150431454422,
         "tickSize": "0.0001"
     },
     {
         "pair": "SCRTUSDT",
-        "minOrderSize": 0.1385445871147808,
-        "maxPositionSize": 20.781688067217114,
+        "minOrderSize": 1.702061697432135,
+        "maxPositionSize": 17.02061697432135,
         "tickSize": "0.0001"
     },
     {
         "pair": "SCUSDT",
-        "minOrderSize": 28.130930451003543,
-        "maxPositionSize": 4219.639567650531,
+        "minOrderSize": 319.1951146945514,
+        "maxPositionSize": 3191.951146945514,
         "tickSize": "0.000001"
     },
     {
         "pair": "SFPUSDT",
-        "minOrderSize": 0.23460907928318236,
-        "maxPositionSize": 35.191361892477346,
+        "minOrderSize": 2.6195913432700992,
+        "maxPositionSize": 26.19591343270099,
         "tickSize": "0.0001"
     },
     {
         "pair": "SHIB1000USDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 1492.2900683924843,
+        "minOrderSize": 104.24688117192414,
+        "maxPositionSize": 1042.4688117192413,
         "tickSize": "0.000001"
     },
     {
         "pair": "SKLUSDT",
-        "minOrderSize": 2.5831415971379013,
-        "maxPositionSize": 387.4712395706851,
+        "minOrderSize": 29.84958946989192,
+        "maxPositionSize": 298.4958946989192,
         "tickSize": "0.00001"
     },
     {
         "pair": "SLPUSDT",
-        "minOrderSize": 36.65676629538462,
-        "maxPositionSize": 5498.514944307692,
+        "minOrderSize": 415.7544970609319,
+        "maxPositionSize": 4157.544970609319,
         "tickSize": "0.00001"
     },
     {
         "pair": "SNXUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.319014699080622,
+        "minOrderSize": 0.45793724705882355,
+        "maxPositionSize": 4.579372470588235,
         "tickSize": "0.001"
     },
     {
         "pair": "SOLUSDT",
         "minOrderSize": 0.1,
-        "maxPositionSize": 0.812059146096519,
+        "maxPositionSize": 0.6235311760468741,
         "tickSize": "0.001"
     },
     {
         "pair": "SPELLUSDT",
-        "minOrderSize": 144.9324701459854,
-        "maxPositionSize": 21739.870521897807,
+        "minOrderSize": 1713.3752537666173,
+        "maxPositionSize": 17133.752537666172,
         "tickSize": "0.000001"
     },
     {
         "pair": "SSVUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.4460852114078881,
+        "minOrderSize": 0.030829370014617937,
+        "maxPositionSize": 0.30829370014617935,
         "tickSize": "0.005"
     },
     {
         "pair": "STGUSDT",
-        "minOrderSize": 0.126402642397878,
-        "maxPositionSize": 18.960396359681695,
+        "minOrderSize": 1.6845121214057508,
+        "maxPositionSize": 16.845121214057507,
         "tickSize": "0.0001"
     },
     {
         "pair": "STMXUSDT",
-        "minOrderSize": 17.80784610762332,
-        "maxPositionSize": 2671.1769161434977,
+        "minOrderSize": 199.81999083548664,
+        "maxPositionSize": 1998.1999083548662,
         "tickSize": "0.000005"
     },
     {
         "pair": "STORJUSDT",
-        "minOrderSize": 0.28264410548042707,
-        "maxPositionSize": 42.39661582206406,
+        "minOrderSize": 3.3867300636496345,
+        "maxPositionSize": 33.867300636496346,
         "tickSize": "0.0005"
     },
     {
         "pair": "STXUSDT",
-        "minOrderSize": 0.13093141055060994,
-        "maxPositionSize": 19.63971158259149,
+        "minOrderSize": 1.8409062796381526,
+        "maxPositionSize": 18.409062796381527,
         "tickSize": "0.00005"
     },
     {
         "pair": "SUNUSDT",
-        "minOrderSize": 17.545580332842416,
-        "maxPositionSize": 2631.837049926362,
+        "minOrderSize": 181.6687622239624,
+        "maxPositionSize": 1816.687622239624,
         "tickSize": "0.000005"
     },
     {
         "pair": "SUSHIUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 13.67266531675593,
+        "minOrderSize": 1.0192926597539544,
+        "maxPositionSize": 10.192926597539545,
         "tickSize": "0.001"
     },
     {
         "pair": "SWEATUSDT",
-        "minOrderSize": 10.618047278074867,
-        "maxPositionSize": 1592.7070917112296,
+        "minOrderSize": 124.86060783638321,
+        "maxPositionSize": 1248.606078363832,
         "tickSize": "0.00001"
     },
     {
         "pair": "SXPUSDT",
-        "minOrderSize": 0.37641229213270144,
-        "maxPositionSize": 56.46184381990521,
+        "minOrderSize": 4.418876368761905,
+        "maxPositionSize": 44.188763687619044,
         "tickSize": "0.0005"
     },
     {
         "pair": "THETAUSDT",
-        "minOrderSize": 0.10274643420439845,
-        "maxPositionSize": 15.411965130659766,
+        "minOrderSize": 1.1862907003477192,
+        "maxPositionSize": 11.862907003477192,
         "tickSize": "0.0001"
     },
     {
         "pair": "TLMUSDT",
-        "minOrderSize": 5.434967630474453,
-        "maxPositionSize": 815.2451445711679,
+        "minOrderSize": 65.68261873159683,
+        "maxPositionSize": 656.8261873159684,
         "tickSize": "0.000005"
     },
     {
         "pair": "TOMOUSDT",
-        "minOrderSize": 0.2881124315840387,
-        "maxPositionSize": 43.2168647376058,
+        "minOrderSize": 3.2131718747922435,
+        "maxPositionSize": 32.131718747922434,
         "tickSize": "0.0005"
     },
     {
         "pair": "TRBUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 1.0047890676974978,
+        "minOrderSize": 0.0812293450140056,
+        "maxPositionSize": 0.8122934501400559,
         "tickSize": "0.005"
     },
     {
         "pair": "TRXUSDT",
-        "minOrderSize": 1.7136721872842349,
-        "maxPositionSize": 257.0508280926352,
+        "minOrderSize": 17.63385598662207,
+        "maxPositionSize": 176.3385598662207,
+        "tickSize": "0.00001"
+    },
+    {
+        "pair": "TUSDT",
+        "minOrderSize": 33.68046012775842,
+        "maxPositionSize": 336.8046012775842,
         "tickSize": "0.00001"
     },
     {
         "pair": "TWTUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 13.847480487407982,
+        "minOrderSize": 0.9755719485281749,
+        "maxPositionSize": 9.755719485281748,
         "tickSize": "0.0005"
     },
     {
         "pair": "UNFIUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 3.008953286580232,
+        "minOrderSize": 0.239907972450879,
+        "maxPositionSize": 2.39907972450879,
         "tickSize": "0.0005"
     },
     {
         "pair": "UNIUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 2.6604397154979904,
+        "minOrderSize": 0.18876404341741254,
+        "maxPositionSize": 1.8876404341741253,
         "tickSize": "0.001"
     },
     {
         "pair": "USDCUSDT",
-        "minOrderSize": 0.11909876083175049,
-        "maxPositionSize": 17.86481412476257,
+        "minOrderSize": 1.1596071646506048,
+        "maxPositionSize": 11.596071646506047,
         "tickSize": "0.0001"
     },
     {
         "pair": "VETUSDT",
-        "minOrderSize": 4.40423254935305,
-        "maxPositionSize": 660.6348824029574,
+        "minOrderSize": 52.60567105668934,
+        "maxPositionSize": 526.0567105668933,
         "tickSize": "0.00005"
     },
     {
         "pair": "WAVESUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 6.958790330607476,
+        "minOrderSize": 0.5388873620441348,
+        "maxPositionSize": 5.388873620441348,
         "tickSize": "0.0005"
     },
     {
         "pair": "WOOUSDT",
-        "minOrderSize": 0.5646184381990522,
-        "maxPositionSize": 84.69276572985783,
+        "minOrderSize": 6.681768702764977,
+        "maxPositionSize": 66.81768702764977,
         "tickSize": "0.0001"
     },
     {
         "pair": "XCNUSDT",
-        "minOrderSize": 13.40095505736783,
-        "maxPositionSize": 2010.143258605174,
+        "minOrderSize": 147.76497411464968,
+        "maxPositionSize": 1477.6497411464968,
         "tickSize": "0.00001"
     },
     {
         "pair": "XEMUSDT",
-        "minOrderSize": 2.4313161318367347,
-        "maxPositionSize": 364.6974197755102,
+        "minOrderSize": 31.014840823529408,
+        "maxPositionSize": 310.1484082352941,
         "tickSize": "0.0001"
     },
     {
         "pair": "XLMUSDT",
-        "minOrderSize": 1.3717270058721935,
-        "maxPositionSize": 205.75905088082902,
+        "minOrderSize": 14.154424,
+        "maxPositionSize": 141.54424,
         "tickSize": "0.00005"
     },
     {
         "pair": "XMRUSDT",
         "minOrderSize": 0.01,
-        "maxPositionSize": 0.11741244132063075,
+        "maxPositionSize": 0.07936743392405063,
         "tickSize": "0.05"
     },
     {
         "pair": "XNOUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 19.93549037148594,
+        "minOrderSize": 1.3965266636166627,
+        "maxPositionSize": 13.965266636166627,
         "tickSize": "0.0001"
     },
     {
         "pair": "XRPUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 47.30061823451561,
+        "minOrderSize": 2.9841910131206584,
+        "maxPositionSize": 29.841910131206582,
         "tickSize": "0.0001"
     },
     {
         "pair": "XTZUSDT",
-        "minOrderSize": 0.10359520909565219,
-        "maxPositionSize": 15.539281364347826,
+        "minOrderSize": 1.1089436393881453,
+        "maxPositionSize": 11.089436393881453,
         "tickSize": "0.001"
     },
     {
         "pair": "YFIUSDT",
-        "minOrderSize": 0.0001,
-        "maxPositionSize": 0.0017675740424332343,
+        "minOrderSize": 0.00014355879292079208,
+        "maxPositionSize": 0.0014355879292079208,
         "tickSize": "5"
     },
     {
         "pair": "YGGUSDT",
-        "minOrderSize": 0.3870516259259259,
-        "maxPositionSize": 58.05774388888888,
+        "minOrderSize": 4.722944001628664,
+        "maxPositionSize": 47.229440016286645,
         "tickSize": "0.0001"
     },
     {
         "pair": "ZECUSDT",
-        "minOrderSize": 0.01,
-        "maxPositionSize": 0.4098663662614679,
+        "minOrderSize": 0.031910730310866574,
+        "maxPositionSize": 0.31910730310866575,
         "tickSize": "0.05"
     },
     {
         "pair": "ZENUSDT",
-        "minOrderSize": 0.1,
-        "maxPositionSize": 1.5116032455591268,
+        "minOrderSize": 0.11467672237271379,
+        "maxPositionSize": 1.1467672237271378,
         "tickSize": "0.001"
     },
     {
         "pair": "ZILUSDT",
-        "minOrderSize": 10,
-        "maxPositionSize": 582.469803422425,
+        "minOrderSize": 46.82902893823173,
+        "maxPositionSize": 468.29028938231727,
         "tickSize": "0.00001"
     },
     {
         "pair": "ZRXUSDT",
-        "minOrderSize": 1,
-        "maxPositionSize": 63.52710120511909,
+        "minOrderSize": 5.333126651954022,
+        "maxPositionSize": 53.33126651954022,
         "tickSize": "0.0001"
     }
 ]

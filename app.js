@@ -8,6 +8,7 @@ import fs from 'fs';
 import { Webhook, MessageBuilder } from 'discord-webhook-node';
 import moment from 'moment';
 import * as cron from 'node-cron'
+import sqlite3 from 'sqlite3'
 
 var rateLimit = 2000;
 var baseRateLimit = 2000;
@@ -15,6 +16,29 @@ var lastReport = 0;
 var pairs = [];
 var liquidationOrders = [];
 var lastUpdate = 0;
+
+
+// create database for PnL storage if not allready done
+var db = new sqlite3.Database('./lickhunter_pnl.db', sqlite3.OPEN_READWRITE, (err) => {
+    if (err && err.code == "SQLITE_CANTOPEN") {
+        console.log("Database not found !");
+        createDatabase();
+        putBalanceInDb();
+        return;
+    } else if (err) {
+        console.log("Error opening database !\n" + err);
+        process.exit(1);
+    }
+    console.log("Database found !");
+    putBalanceInDb();
+    cronTaskDbWriting = cron.schedule(process.env.DB_WRITE_INTERVALL, () => {
+        console.log(moment().toString() + ' Database REPORT');
+        putBalanceInDb();
+        });
+});
+
+// Database writing task
+var cronTaskDbWriting;  // will be initialised after database is successfully initialised
 
 // used to calculate bot runtime
 const timestampBotStart = moment();
@@ -1282,7 +1306,7 @@ async function reportWebhook() {
         }
 
         const embed = new MessageBuilder()
-            .setTitle("```"+'---------------------------Bot Report---------------------------'+"```")
+            .setTitle("```"+'--------------------------- DEV Bot Report---------------------------'+"```")
             .addField('Balance: ', "```autohotkey" + '\n' + balance.toString() + "```", true)
             .addField('Leverage: ', "```autohotkey" + '\n' + process.env.LEVERAGE.toString() + "```", true)
             //.addField('Version: ', version.commit.toString(), true)
@@ -1323,9 +1347,71 @@ async function reportWebhook() {
     }
 }
 
+function createDatabase() {
+    console.log("Creating database ...");
+    //var newdb = new sqlite3.Database('lickhunter_pnl.db', (err) => {
+    db = new sqlite3.Database('lickhunter_pnl.db', (err) => {
+        if (err) {
+            console.log("Could not create database !\n" + err);
+            process.exit(1);
+        } else {
+            console.log("Database created !");
+            createTables(db);
+        }
+    });
+    
+}
+
+function createTables(newdb) {
+    console.log("Creating database structure ...");
+    newdb.exec(`
+        CREATE TABLE "pnl" (
+        "id"	INTEGER PRIMARY KEY AUTOINCREMENT UNIQUE,
+        "timestamp"	NUMERIC NO NULL,
+        "date"	TEXT NOT NULL,
+        "pnl_procent"	NUMERIC,
+        "pnl_usdt"	NUMERIC,
+        "balance"	NUMERIC
+    )`, (err)  => {
+            if (err) {
+                console.log("Error creating database structure !\n" + err);
+                process.exit(1);
+            } else {
+                cronTaskDbWriting = cron.schedule(process.env.DB_WRITE_INTERVALL, () => {
+                    console.log(moment().toString() + 'Database REPORT');
+                        putBalanceInDb();
+                    });
+                    console.log("Database structure created !");
+            }
+        });  
+}
+
+function db_insertPnl(newdb, pnl_proc, pnl, bal) {
+    console.log("Interserting PnL into database ...");
+    var now = moment();
+    var now_text = moment().format("DD.MM.YYYY HH:mm:ss").toString();
+    newdb.exec("INSERT INTO pnl (timestamp, date, pnl_procent, pnl_usdt, balance) values ("+ now + ",'" + now_text + "'," + pnl_proc + "," + pnl + "," + bal + ");", (err)  => {
+        if (err) {
+            console.log("Could not write to database !\n" + err);
+        }
+    });
+}
+
+async function putBalanceInDb() {
+    var balance = await getBalance();
+    const settings = JSON.parse(fs.readFileSync('account.json', 'utf8'));
+    var startingBalance = settings.startingBalance;
+    var diff = balance - startingBalance;
+    var percentGain = ((diff / startingBalance) * 100).toFixed(6);
+    diff = diff.toFixed(6);
+    var balance = balance.toFixed(2);
+    
+    db_insertPnl(db, percentGain, diff, balance);
+}
 
 async function main() {
     console.log("Starting Lick Hunter!");
+
     reportWebhook();
     try{
         pairs = await getSymbols();

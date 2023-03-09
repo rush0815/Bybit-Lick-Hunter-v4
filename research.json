@@ -1,975 +1,980 @@
 {
     "data": [
         {
-            "long_price": 0.0047730589625,
+            "long_price": 0.004375238703594,
             "name": "10000NFT",
-            "short_price": 0.005128804278584127
+            "short_price": 0.004711220668707894
         },
         {
-            "long_price": 0.0006651885036643772,
+            "long_price": 0.0005156268703976319,
             "name": "1000BONK",
-            "short_price": 0.00077323621625
+            "short_price": 0.000603383797752
         },
         {
-            "long_price": 0.00068523533788,
+            "long_price": 0.0006571539429125,
             "name": "1000BTT",
-            "short_price": 0.0008022720900000001
+            "short_price": 0.0007154110817313014
         },
         {
-            "long_price": 0.044302348409625,
+            "long_price": 0.0405985887020655,
             "name": "1000FLOKI",
-            "short_price": 0.052248272975999994
+            "short_price": 0.04602879365169375
         },
         {
-            "long_price": 0.15832726750192,
+            "long_price": 0.13325355417867749,
             "name": "1000LUNC",
-            "short_price": 0.169505557202
+            "short_price": 0.1706972488362
         },
         {
-            "long_price": 0.03393166813673,
+            "long_price": 0.0284452823655,
             "name": "1000XEC",
-            "short_price": 0.035368458090000006
+            "short_price": 0.033227790975000004
         },
         {
-            "long_price": 0.5761604321530001,
+            "long_price": 0.475852892615,
             "name": "1INCH",
-            "short_price": 0.5916123825
+            "short_price": 0.5355422964
         },
         {
-            "long_price": 78.8653818681624,
+            "long_price": 70.867205689,
             "name": "AAVE",
-            "short_price": 82.63327113999999
+            "short_price": 78.42353452249506
         },
         {
-            "long_price": 0.034356106759275,
+            "long_price": 0.027638652079670003,
             "name": "ACH",
-            "short_price": 0.04178452500852
+            "short_price": 0.0329874848042
         },
         {
-            "long_price": 0.3406153502525,
+            "long_price": 0.30954140417849996,
             "name": "ADA",
-            "short_price": 0.36704936212559997
+            "short_price": 0.33914195062059
         },
         {
-            "long_price": 0.44679561557664005,
+            "long_price": 0.383521864575075,
             "name": "AGIX",
-            "short_price": 0.56634499682838
+            "short_price": 0.49068429590775003
         },
         {
-            "long_price": 0.58484802127629,
+            "long_price": 0.39941027125527234,
             "name": "AGLD",
-            "short_price": 0.6132740405249999
+            "short_price": 0.5044368137999999
         },
         {
-            "long_price": 0.004778126087367304,
+            "long_price": 0.0049878993223149235,
             "name": "AKRO",
-            "short_price": 0.0058718912647499994
+            "short_price": 0.0062781976702935
         },
         {
-            "long_price": 0.24700985161125003,
+            "long_price": 0.202352148615,
             "name": "ALGO",
-            "short_price": 0.25509140475
+            "short_price": 0.23164369386
         },
         {
-            "long_price": 1.871664044945555,
+            "long_price": 1.47124736325,
             "name": "ALICE",
-            "short_price": 1.97165295956674
+            "short_price": 1.7617757052069751
         },
         {
-            "long_price": 0.131549661407625,
+            "long_price": 0.0987839780885,
             "name": "ALPHA",
-            "short_price": 0.16744494621
+            "short_price": 0.11219334221276
         },
         {
-            "long_price": 0.0371204425961875,
+            "long_price": 0.030049702117174996,
             "name": "ANKR",
-            "short_price": 0.04462274955771
+            "short_price": 0.035327621500339995
         },
         {
-            "long_price": 2.68987812722,
+            "long_price": 2.197365029475,
             "name": "ANT",
-            "short_price": 2.7802796636717195
+            "short_price": 2.5244687545
         },
         {
-            "long_price": 5.04803087474565,
+            "long_price": 4.400866221525,
             "name": "APE",
-            "short_price": 5.18648466241917
+            "short_price": 4.8890140245
         },
         {
-            "long_price": 1.5438989578339801,
+            "long_price": 1.38521467723032,
             "name": "API3",
-            "short_price": 1.6332600726000002
+            "short_price": 1.53530616825
         },
         {
-            "long_price": 12.454882031933131,
+            "long_price": 10.40594489157225,
             "name": "APT",
-            "short_price": 13.800437335172251
+            "short_price": 12.088072521462195
         },
         {
-            "long_price": 9.91404015468876,
+            "long_price": 7.8795817035,
             "name": "AR",
-            "short_price": 10.224129
+            "short_price": 9.523633315000001
         },
         {
-            "long_price": 0.040050635933,
+            "long_price": 0.035154330328,
             "name": "ARPA",
-            "short_price": 0.044453449017739996
+            "short_price": 0.03884965384144
         },
         {
-            "long_price": 0.07677398510822,
+            "long_price": 0.0618052387551,
             "name": "ASTR",
-            "short_price": 0.0837596755461
+            "short_price": 0.07066206821160001
         },
         {
-            "long_price": 12.618214295370601,
+            "long_price": 10.997494652,
             "name": "ATOM",
-            "short_price": 13.079609347005299
+            "short_price": 12.212368966
         },
         {
-            "long_price": 0.30104723564999997,
+            "long_price": 0.24494816758000001,
             "name": "AUDIO",
-            "short_price": 0.37567385917530005
+            "short_price": 0.283334822325
         },
         {
-            "long_price": 16.6619721266,
+            "long_price": 15.244910996729999,
             "name": "AVAX",
-            "short_price": 18.361530744
+            "short_price": 16.689960909534243
         },
         {
-            "long_price": 9.74812300169743,
+            "long_price": 8.007318132436001,
             "name": "AXS",
-            "short_price": 10.041757565
+            "short_price": 8.975139729750001
         },
         {
-            "long_price": 0.2143632297025,
+            "long_price": 0.17717934701,
             "name": "BAKE",
-            "short_price": 0.29567326857447
+            "short_price": 0.199694492903985
         },
         {
-            "long_price": 6.970304125879919,
+            "long_price": 5.9882517018,
             "name": "BAL",
-            "short_price": 7.638442329
+            "short_price": 6.538215104
         },
         {
-            "long_price": 1.9762708240837,
+            "long_price": 1.5708506566499998,
             "name": "BAND",
-            "short_price": 2.0754212248618624
+            "short_price": 1.8082893892499998
         },
         {
-            "long_price": 0.29162147741472,
+            "long_price": 0.23447106636,
             "name": "BAT",
-            "short_price": 0.3084532084
+            "short_price": 0.27515871548643
         },
         {
-            "long_price": 133.06826391451824,
+            "long_price": 115.27585295924999,
             "name": "BCH",
-            "short_price": 135.66032516000493
+            "short_price": 126.17014617500203
         },
         {
-            "long_price": 0.7494973404075,
+            "long_price": 0.5926615536500001,
             "name": "BEL",
-            "short_price": 0.8648470303875
+            "short_price": 0.68008892018276
         },
         {
-            "long_price": 0.4300655761775,
+            "long_price": 0.3621796036117388,
             "name": "BICO",
-            "short_price": 0.49322065846
+            "short_price": 0.4003037724129745
         },
         {
-            "long_price": 0.57348536762,
+            "long_price": 0.49137450580244185,
             "name": "BIT",
-            "short_price": 1.8038128353677438
+            "short_price": 0.5350723764925001
         },
         {
-            "long_price": 0.7988710765377453,
+            "long_price": 0.6113580575303427,
             "name": "BLUR",
-            "short_price": 0.8453609525211591
+            "short_price": 0.781057519862452
         },
         {
-            "long_price": 0.11058645871999999,
+            "long_price": 0.081524744247,
             "name": "BLZ",
-            "short_price": 0.11920410591999998
+            "short_price": 0.10339120353518999
         },
         {
-            "long_price": 298.2181488,
+            "long_price": 287.03047456904574,
             "name": "BNB",
-            "short_price": 307.5534090242542
+            "short_price": 292.24715820909984
         },
         {
-            "long_price": 0.9640796498759999,
+            "long_price": 0.6767308742735499,
             "name": "BNX",
-            "short_price": 1.5363976410720002
+            "short_price": 0.82603650308127
         },
         {
-            "long_price": 0.26303448507686233,
+            "long_price": 0.22444404945047147,
             "name": "BOBA",
-            "short_price": 0.32826967048125
+            "short_price": 0.2480697388663106
         },
         {
-            "long_price": 40.49375136914234,
+            "long_price": 35.3264975525,
             "name": "BSV",
-            "short_price": 43.51179867200422
+            "short_price": 38.9738068473868
         },
         {
-            "long_price": 0.217325647356627,
+            "long_price": 0.1841513683703524,
             "name": "BSW",
-            "short_price": 0.231355957723179
+            "short_price": 0.21430935150813
         },
         {
-            "long_price": 23396.52496934842,
+            "long_price": 21019.989004416246,
             "name": "BTC",
-            "short_price": 23616.460171500003
+            "short_price": 22825.675888425678
         },
         {
-            "long_price": 0.2620249672975,
+            "long_price": 0.22366578260499997,
             "name": "C98",
-            "short_price": 0.289551599425
+            "short_price": 0.25830280863994
         },
         {
-            "long_price": 0.10025948852305402,
+            "long_price": 0.094518777765994,
             "name": "CEEK",
-            "short_price": 0.11081311889390184
+            "short_price": 0.10179991594999999
         },
         {
-            "long_price": 0.75149601904707,
+            "long_price": 0.6000552278999999,
             "name": "CELO",
-            "short_price": 0.79500585852635
+            "short_price": 0.7083501029999999
         },
         {
-            "long_price": 0.020079333911999998,
+            "long_price": 0.015814458038249997,
             "name": "CELR",
-            "short_price": 0.021510206621365
+            "short_price": 0.018251523323235003
         },
         {
-            "long_price": 0.22458667872420002,
+            "long_price": 0.20480730998255,
             "name": "CFX",
-            "short_price": 0.24012141417225003
+            "short_price": 0.21258204264492
         },
         {
-            "long_price": 0.17495811597411,
+            "long_price": 0.14058768477,
             "name": "CHR",
-            "short_price": 0.18394551693231
+            "short_price": 0.15915429615479
         },
         {
-            "long_price": 0.13285418278016,
+            "long_price": 0.11338479662499999,
             "name": "CHZ",
-            "short_price": 0.14616440529600003
+            "short_price": 0.14029102634249999
         },
         {
-            "long_price": 0.0051377515696,
+            "long_price": 0.00398543982446375,
             "name": "CKB",
-            "short_price": 0.0059546548737000006
+            "short_price": 0.0048317961230425
         },
         {
-            "long_price": 1.9933875534078627,
+            "long_price": 1.4143033230997497,
             "name": "COCOS",
-            "short_price": 2.56417399491925
+            "short_price": 1.7264164662400001
         },
         {
-            "long_price": 49.685322410101946,
+            "long_price": 42.664452072500005,
             "name": "COMP",
-            "short_price": 51.02908317
+            "short_price": 48.226991430000005
         },
         {
-            "long_price": 3.0316187922265,
+            "long_price": 2.787361090101462,
             "name": "CORE",
-            "short_price": 3.1965640170258083
+            "short_price": 3.02100301965
         },
         {
-            "long_price": 0.08584670920336,
+            "long_price": 0.07360782894,
             "name": "COTI",
-            "short_price": 0.09191225896
+            "short_price": 0.08349552782024
         },
         {
-            "long_price": 11.859659353375001,
+            "long_price": 10.506907173591093,
             "name": "CREAM",
-            "short_price": 12.870231464945896
+            "short_price": 12.7220696766
         },
         {
-            "long_price": 0.07749757059112,
+            "long_price": 0.0663651260589467,
             "name": "CRO",
-            "short_price": 0.08276850348249136
+            "short_price": 0.07335092880199374
         },
         {
-            "long_price": 0.99932773656006,
+            "long_price": 0.9157938297499999,
             "name": "CRV",
-            "short_price": 1.0295184885000002
+            "short_price": 0.97368106033019
         },
         {
-            "long_price": 0.4802019197975,
+            "long_price": 0.421988276602716,
             "name": "CTC",
-            "short_price": 0.5201038561752237
+            "short_price": 0.49698811818
         },
         {
-            "long_price": 0.79932918276084,
+            "long_price": 0.696773658276,
             "name": "CTK",
-            "short_price": 0.8425254691875
+            "short_price": 0.78373990719
         },
         {
-            "long_price": 0.16427713356605,
+            "long_price": 0.13141462603499998,
             "name": "CTSI",
-            "short_price": 0.174547190925
+            "short_price": 0.15670797425625
         },
         {
-            "long_price": 0.12303757374789401,
+            "long_price": 0.09829417329823496,
             "name": "CVC",
-            "short_price": 0.14132510615090402
+            "short_price": 0.129772508667
         },
         {
-            "long_price": 5.738529798397045,
+            "long_price": 5.7844008915601,
             "name": "CVX",
-            "short_price": 6.352041303024625
+            "short_price": 6.17793813607
         },
         {
-            "long_price": 0.206051980246215,
+            "long_price": 0.1601623563,
             "name": "DAR",
-            "short_price": 0.219997483375
+            "short_price": 0.181775685
         },
         {
-            "long_price": 68.25521485640407,
+            "long_price": 58.132861937499996,
             "name": "DASH",
-            "short_price": 73.41695916750001
+            "short_price": 66.74793145399687
         },
         {
-            "long_price": 0.00114348952409,
+            "long_price": 0.0009531970216999998,
             "name": "DENT",
-            "short_price": 0.0012793713889999998
+            "short_price": 0.001164941008
         },
         {
-            "long_price": 0.011219449266824999,
+            "long_price": 0.009519528917250001,
             "name": "DGB",
-            "short_price": 0.012057151589504999
+            "short_price": 0.010576702650194999
         },
         {
-            "long_price": 0.22872984310727998,
+            "long_price": 0.177877250173645,
             "name": "DODO",
-            "short_price": 0.27456360501636
+            "short_price": 0.22083292289102
         },
         {
-            "long_price": 0.08044890553029001,
+            "long_price": 0.06972894955174999,
             "name": "DOGE",
-            "short_price": 0.081852390477
+            "short_price": 0.076013911026675
         },
         {
-            "long_price": 6.1387575057,
+            "long_price": 5.479095861599999,
             "name": "DOT",
-            "short_price": 6.63514346208024
+            "short_price": 6.0483424119330405
         },
         {
-            "long_price": 0.20982576738000003,
+            "long_price": 0.168866327322,
             "name": "DUSK",
-            "short_price": 0.24642995472900003
+            "short_price": 0.19289632953864
         },
         {
-            "long_price": 2.8896210549399997,
+            "long_price": 2.122605729,
             "name": "DYDX",
-            "short_price": 3.3570805295999997
+            "short_price": 2.7074220574158003
         },
         {
-            "long_price": 47.15062669830012,
+            "long_price": 39.588436384999994,
             "name": "EGLD",
-            "short_price": 50.29883178706732
+            "short_price": 44.626112053817
         },
         {
-            "long_price": 0.45036666086825,
+            "long_price": 0.4169559141419,
             "name": "ENJ",
-            "short_price": 0.49862181795037497
+            "short_price": 0.44004053962
         },
         {
-            "long_price": 15.155438473890275,
+            "long_price": 12.952241483799998,
             "name": "ENS",
-            "short_price": 16.424485927499997
+            "short_price": 15.053835171997061
         },
         {
-            "long_price": 1.136528808,
+            "long_price": 1.1080471148,
             "name": "EOS",
-            "short_price": 1.2521826198000001
+            "short_price": 1.2475352276018001
         },
         {
-            "long_price": 20.95914759691054,
+            "long_price": 18.069746754150003,
             "name": "ETC",
-            "short_price": 21.35722874279174
+            "short_price": 20.09211125099248
         },
         {
-            "long_price": 1622.9959626650002,
+            "long_price": 1476.9308861174998,
             "name": "ETH",
-            "short_price": 1735.6680299700004
+            "short_price": 1607.9716084727668
         },
         {
-            "long_price": 3.6497480350804876,
+            "long_price": 3.3394685690918373,
             "name": "ETHW",
-            "short_price": 3.926221460254649
+            "short_price": 3.6759758035
         },
         {
-            "long_price": 0.43496919517536,
+            "long_price": 0.37304956498329994,
             "name": "FET",
-            "short_price": 0.499308475638735
+            "short_price": 0.45593221420725
         },
         {
-            "long_price": 6.9266911504624815,
+            "long_price": 5.613540352749999,
             "name": "FIL",
-            "short_price": 7.058650729464376
+            "short_price": 6.95739122
         },
         {
-            "long_price": 0.024059096960230324,
+            "long_price": 0.016781080165174215,
             "name": "FITFI",
-            "short_price": 0.029323062062499995
+            "short_price": 0.019305994
         },
         {
-            "long_price": 0.11025888993836999,
+            "long_price": 0.087635859255,
             "name": "FLM",
-            "short_price": 0.1146342363
+            "short_price": 0.10068399433281
         },
         {
-            "long_price": 1.1646728820094,
+            "long_price": 0.9496004185999999,
             "name": "FLOW",
-            "short_price": 1.24169054125
+            "short_price": 1.09743234601887
         },
         {
-            "long_price": 0.45376982653104003,
+            "long_price": 0.37438856329162495,
             "name": "FTM",
-            "short_price": 0.46679175221792
+            "short_price": 0.423853390848825
         },
         {
-            "long_price": 10.3261412727242,
+            "long_price": 8.879445675569398,
             "name": "FXS",
-            "short_price": 12.523500723267452
+            "short_price": 10.942720412811719
         },
         {
-            "long_price": 1.9277531207131402,
+            "long_price": 1.5188610316999998,
             "name": "GAL",
-            "short_price": 1.96841845028
+            "short_price": 1.74376311694716
         },
         {
-            "long_price": 0.04051418989535,
+            "long_price": 0.03483322941599999,
             "name": "GALA",
-            "short_price": 0.0414167605016
+            "short_price": 0.0382477279158
         },
         {
-            "long_price": 0.06778085958732535,
+            "long_price": 0.058287053833585,
             "name": "GFT",
-            "short_price": 0.0759280191941245
+            "short_price": 0.06412292856926499
         },
         {
-            "long_price": 0.432327333625,
+            "long_price": 0.36868379405503054,
             "name": "GLMR",
-            "short_price": 0.456880979254025
+            "short_price": 0.4074926144818759
         },
         {
-            "long_price": 0.377563052625525,
+            "long_price": 0.330959425755,
             "name": "GMT",
-            "short_price": 0.418134745665
+            "short_price": 0.40795496285
         },
         {
-            "long_price": 71.20609282682699,
+            "long_price": 68.077000705,
             "name": "GMX",
-            "short_price": 77.0827338550275
+            "short_price": 73.334973982091
         },
         {
-            "long_price": 0.15279153274,
+            "long_price": 0.12835328772399998,
             "name": "GRT",
-            "short_price": 0.162608698945
+            "short_price": 0.1455921564
         },
         {
-            "long_price": 2.1644370215639,
+            "long_price": 1.6980968847499998,
             "name": "GTC",
-            "short_price": 2.44755558425
+            "short_price": 1.8811210351916499
         },
         {
-            "long_price": 0.06677041235100001,
+            "long_price": 0.0591700250265,
             "name": "HBAR",
-            "short_price": 0.07405630779
+            "short_price": 0.0657061732075
         },
         {
-            "long_price": 2.637568000061595,
+            "long_price": 2.1592593452999997,
             "name": "HNT",
-            "short_price": 2.81771727072471
+            "short_price": 2.3865498027
         },
         {
-            "long_price": 2.31278234957848,
+            "long_price": 1.7675444466663,
             "name": "HOOK",
-            "short_price": 2.5122234180141603
+            "short_price": 2.14350693261622
         },
         {
-            "long_price": 0.0020232717468599997,
+            "long_price": 0.0016489474500999998,
             "name": "HOT",
-            "short_price": 0.002150461613
+            "short_price": 0.002154945398
         },
         {
-            "long_price": 6.03275279999536,
+            "long_price": 5.0031210945756,
             "name": "ICP",
-            "short_price": 6.30911696
+            "short_price": 5.63109185701128
         },
         {
-            "long_price": 0.24065198213508002,
+            "long_price": 0.20248249165499999,
             "name": "ICX",
-            "short_price": 0.26163380915631
+            "short_price": 0.2641812825
         },
         {
-            "long_price": 77.88522407399999,
+            "long_price": 70.21396614499385,
             "name": "ILV",
-            "short_price": 86.53796731841032
+            "short_price": 86.43176921599999
         },
         {
-            "long_price": 0.9879356541875,
+            "long_price": 0.991201274,
             "name": "IMX",
-            "short_price": 1.101336536025
+            "short_price": 1.1525265843
         },
         {
-            "long_price": 3.52608878770825,
+            "long_price": 2.977931831446825,
             "name": "INJ",
-            "short_price": 3.82530729833437
+            "short_price": 3.518372289222725
         },
         {
-            "long_price": 0.0111104848068,
+            "long_price": 0.0094113633185,
             "name": "IOST",
-            "short_price": 0.011693060980000001
+            "short_price": 0.0120661828925
         },
         {
-            "long_price": 0.2442011806,
+            "long_price": 0.19473229142999995,
             "name": "IOTA",
-            "short_price": 0.26528401575
+            "short_price": 0.23704715685
         },
         {
-            "long_price": 0.02770623560512,
+            "long_price": 0.02258947107,
             "name": "IOTX",
-            "short_price": 0.028517110399999997
+            "short_price": 0.02614452965625
         },
         {
-            "long_price": 0.005919657229305,
+            "long_price": 0.00526721812001,
             "name": "JASMY",
-            "short_price": 0.006313139640000001
+            "short_price": 0.00559982277624
         },
         {
-            "long_price": 0.0287593508971,
+            "long_price": 0.026573548369515747,
             "name": "JST",
-            "short_price": 0.032931588359663005
+            "short_price": 0.028860338282072216
         },
         {
-            "long_price": 0.85071363118944,
+            "long_price": 0.7940731558545,
             "name": "KAVA",
-            "short_price": 0.9032243347188
+            "short_price": 0.8417699297144999
         },
         {
-            "long_price": 1.0434084975381483,
+            "long_price": 0.978653205577962,
             "name": "KDA",
-            "short_price": 1.3615528469658171
+            "short_price": 1.0944048000170024
         },
         {
-            "long_price": 0.25636433335000003,
+            "long_price": 0.2058831129375,
             "name": "KLAY",
-            "short_price": 0.31187923559999997
+            "short_price": 0.240621824140455
         },
         {
-            "long_price": 0.8088747628124999,
+            "long_price": 0.6741740844119999,
             "name": "KNC",
-            "short_price": 0.93931654125
+            "short_price": 0.7435585027799999
         },
         {
-            "long_price": 37.249440650289,
+            "long_price": 31.30422577,
             "name": "KSM",
-            "short_price": 38.6826657518166
+            "short_price": 35.265677696000004
         },
         {
-            "long_price": 2.916333882249095,
+            "long_price": 2.4106212966624994,
             "name": "LDO",
-            "short_price": 3.1528391614999998
+            "short_price": 2.7536177111024998
         },
         {
-            "long_price": 0.009686924237249999,
+            "long_price": 0.007824665272,
             "name": "LINA",
-            "short_price": 0.012337380607499998
+            "short_price": 0.00895836211132
         },
         {
-            "long_price": 7.060905183874999,
+            "long_price": 6.4592566554,
             "name": "LINK",
-            "short_price": 7.710325168355877
+            "short_price": 7.10333492866152
         },
         {
-            "long_price": 1.1353594552,
+            "long_price": 0.993993350975,
             "name": "LIT",
-            "short_price": 1.3387684640000002
+            "short_price": 1.1280984195000001
         },
         {
-            "long_price": 0.185596391880372,
+            "long_price": 0.15164622624429597,
             "name": "LOOKS",
-            "short_price": 0.20996233598960004
+            "short_price": 0.19188733865000002
         },
         {
-            "long_price": 6.85199931795,
+            "long_price": 5.58077051125,
             "name": "LPT",
-            "short_price": 7.616662045499999
+            "short_price": 6.30073308
         },
         {
-            "long_price": 0.34259760643950005,
+            "long_price": 0.298953702334,
             "name": "LRC",
-            "short_price": 0.3715150138275
+            "short_price": 0.34054076890673
         },
         {
-            "long_price": 92.38815541547613,
+            "long_price": 81.17014114324999,
             "name": "LTC",
-            "short_price": 102.29043349875002
+            "short_price": 90.97102704964854
         },
         {
-            "long_price": 1.69678278329796,
+            "long_price": 1.389296036028975,
             "name": "LUNA2",
-            "short_price": 1.8400759123959
+            "short_price": 1.7920898252972501
         },
         {
-            "long_price": 1.6161630733704349,
+            "long_price": 1.31333529135361,
             "name": "MAGIC",
-            "short_price": 1.6674307223555698
+            "short_price": 1.3843857969970002
         },
         {
-            "long_price": 0.643246756031405,
+            "long_price": 0.5524465219175,
             "name": "MANA",
-            "short_price": 0.66220522335
+            "short_price": 0.6077695155
         },
         {
-            "long_price": 3.7049120321749998,
+            "long_price": 3.6227548602,
             "name": "MASK",
-            "short_price": 4.300360265669999
+            "short_price": 3.85114419525
         },
         {
-            "long_price": 1.1746869824497501,
+            "long_price": 1.0758295173724999,
             "name": "MATIC",
-            "short_price": 1.271601817057495
+            "short_price": 1.16821964600209
         },
         {
-            "long_price": 0.91419996629416,
+            "long_price": 0.7289059671381599,
             "name": "MINA",
-            "short_price": 0.9958714374056
+            "short_price": 1.0044590151456
         },
         {
-            "long_price": 784.1901636604158,
+            "long_price": 884.0668236147276,
             "name": "MKR",
-            "short_price": 966.8920776952501
+            "short_price": 945.35919981
         },
         {
-            "long_price": 1.259069454838115,
+            "long_price": 1.0503877230775,
             "name": "MTL",
-            "short_price": 1.3393997801875002
+            "short_price": 1.28883460975
         },
         {
-            "long_price": 2.272160632749225,
+            "long_price": 1.8602642214649998,
             "name": "NEAR",
-            "short_price": 2.36452812975
+            "short_price": 2.0943719361230397
         },
         {
-            "long_price": 12.174740457,
+            "long_price": 10.707810499350002,
             "name": "NEO",
-            "short_price": 13.034181149
+            "short_price": 12.193972719000001
         },
         {
-            "long_price": 0.11419930021499998,
+            "long_price": 0.097400993235,
             "name": "NKN",
-            "short_price": 0.12716180244794997
+            "short_price": 0.11149512111233999
         },
         {
-            "long_price": 0.39256824956672254,
+            "long_price": 0.36832546821224,
             "name": "OCEAN",
-            "short_price": 0.416750300257275
+            "short_price": 0.4006411332
         },
         {
-            "long_price": 0.1339734901788,
+            "long_price": 0.11269891971,
             "name": "OGN",
-            "short_price": 0.14139935280000002
+            "short_price": 0.12587381469468
         },
         {
-            "long_price": 1.6884207911831801,
+            "long_price": 1.3632224082000002,
             "name": "OMG",
-            "short_price": 1.8292604122
+            "short_price": 1.5577127794834402
         },
         {
-            "long_price": 0.02184635625132,
+            "long_price": 0.017184838913999998,
             "name": "ONE",
-            "short_price": 0.022266713467499998
+            "short_price": 0.020094673845
         },
         {
-            "long_price": 0.24984621478667998,
+            "long_price": 0.20206377592499997,
             "name": "ONT",
-            "short_price": 0.26234218039999996
+            "short_price": 0.23325084932187498
         },
         {
-            "long_price": 2.6148008358908883,
+            "long_price": 2.230781149230095,
             "name": "OP",
-            "short_price": 2.9783073411767744
+            "short_price": 2.52294040308926
         },
         {
-            "long_price": 0.025665094497515,
+            "long_price": 0.01999319504175,
             "name": "PEOPLE",
-            "short_price": 0.027991014513
+            "short_price": 0.023915505558735
         },
         {
-            "long_price": 3.265099034594825,
+            "long_price": 2.7466990425,
             "name": "QTUM",
-            "short_price": 3.40602272416091
+            "short_price": 3.0967832
         },
         {
-            "long_price": 0.0032569959099999998,
+            "long_price": 0.0026473803330000004,
             "name": "REEF",
-            "short_price": 0.00343832865775
+            "short_price": 0.0030111505924500003
         },
         {
-            "long_price": 0.10449526511193,
+            "long_price": 0.10985903630987497,
             "name": "REN",
-            "short_price": 0.1322651337315
+            "short_price": 0.1294822637175
         },
         {
-            "long_price": 0.110246706058125,
+            "long_price": 0.097048989445,
             "name": "REQ",
-            "short_price": 0.13191597243825
+            "short_price": 0.10205200353181075
         },
         {
-            "long_price": 1.4392501055920002,
+            "long_price": 1.0984848783843248,
             "name": "RNDR",
-            "short_price": 1.5809810326309999
+            "short_price": 1.340931759214025
         },
         {
-            "long_price": 0.06499024919882,
+            "long_price": 0.0525927166135,
             "name": "ROSE",
-            "short_price": 0.068248341812035
+            "short_price": 0.059866007725964995
         },
         {
-            "long_price": 43.25707534916098,
+            "long_price": 35.20348522438618,
             "name": "RPL",
-            "short_price": 49.00531158751656
+            "short_price": 42.402013326
         },
         {
-            "long_price": 0.005094624708235,
+            "long_price": 0.0038628190939,
             "name": "RSR",
-            "short_price": 0.005523700163135
+            "short_price": 0.0044533957382200005
         },
         {
-            "long_price": 0.15789422501344352,
+            "long_price": 0.13885549276163,
             "name": "RSS3",
-            "short_price": 0.17447708449125
+            "short_price": 0.15776378025399998
         },
         {
-            "long_price": 1.5946737267771598,
+            "long_price": 1.382197759215,
             "name": "RUNE",
-            "short_price": 1.6911380189999998
+            "short_price": 1.6085707904175002
         },
         {
-            "long_price": 0.029185136446999996,
+            "long_price": 0.02386447803525,
             "name": "RVN",
-            "short_price": 0.031514524212704995
+            "short_price": 0.0271315406975
         },
         {
-            "long_price": 0.66271033676625,
+            "long_price": 0.568339416606,
             "name": "SAND",
-            "short_price": 0.7148102013
+            "short_price": 0.63722769695262
         },
         {
-            "long_price": 0.0040842853555387495,
+            "long_price": 0.003696990572979,
             "name": "SC",
-            "short_price": 0.00459870963975
+            "short_price": 0.0045199315568
         },
         {
-            "long_price": 0.7759323018300001,
+            "long_price": 0.6823277680659845,
             "name": "SCRT",
-            "short_price": 0.9005372890131661
+            "short_price": 0.7541517436518776
         },
         {
-            "long_price": 0.49204333098,
+            "long_price": 0.42274833674,
             "name": "SFP",
-            "short_price": 0.5403032316
+            "short_price": 0.48329197707340005
         },
         {
-            "long_price": 0.011531140873345107,
+            "long_price": 0.01036703009696728,
             "name": "SHIB1000",
-            "short_price": 0.012747490751625
+            "short_price": 0.0114893760802675
         },
         {
-            "long_price": 0.04761877123962,
+            "long_price": 0.03818381455,
             "name": "SKL",
-            "short_price": 0.0506205676746
+            "short_price": 0.04395790632716
         },
         {
-            "long_price": 0.003221332218381,
+            "long_price": 0.002857985988,
             "name": "SLP",
-            "short_price": 0.0034418187280000003
+            "short_price": 0.003227725434
         },
         {
-            "long_price": 2.6194685787396152,
+            "long_price": 2.88133457240831,
             "name": "SNX",
-            "short_price": 3.1168231731000002
+            "short_price": 3.0781729033738303
         },
         {
-            "long_price": 22.32721662118453,
+            "long_price": 18.833384121465,
             "name": "SOL",
-            "short_price": 23.02152791702258
+            "short_price": 21.198640985550004
         },
         {
-            "long_price": 0.000813806200805,
+            "long_price": 0.0006675428287574999,
             "name": "SPELL",
-            "short_price": 0.0008660847366
+            "short_price": 0.000760270001085
         },
         {
-            "long_price": 41.86757828461425,
+            "long_price": 38.25514490637968,
             "name": "SSV",
-            "short_price": 45.606570761118
+            "short_price": 41.2218064055788
         },
         {
-            "long_price": 0.9578977779767812,
+            "long_price": 0.7126780331878201,
             "name": "STG",
-            "short_price": 1.12763094396875
+            "short_price": 0.83959703272386
         },
         {
-            "long_price": 0.006648647817425,
+            "long_price": 0.00576602426375,
             "name": "STMX",
-            "short_price": 0.00717992696998
+            "short_price": 0.006329477775
         },
         {
-            "long_price": 0.43139378438101006,
+            "long_price": 0.34065048243999996,
             "name": "STORJ",
-            "short_price": 0.44969077150923503
+            "short_price": 0.38480481580000003
         },
         {
-            "long_price": 0.8270128500816,
+            "long_price": 0.632116269815205,
             "name": "STX",
-            "short_price": 1.0246023955986001
+            "short_price": 0.846668682048345
         },
         {
-            "long_price": 0.006698317472289001,
+            "long_price": 0.00651335800444875,
             "name": "SUN",
-            "short_price": 0.0079824622905
+            "short_price": 0.007732740091749999
         },
         {
-            "long_price": 1.3235000167107,
+            "long_price": 1.1182037924199997,
             "name": "SUSHI",
-            "short_price": 1.39781660879985
+            "short_price": 1.273619435088
         },
         {
-            "long_price": 0.011104075161915,
+            "long_price": 0.0101317700642,
             "name": "SWEAT",
-            "short_price": 0.0114991083521
+            "short_price": 0.010617781935
         },
         {
-            "long_price": 0.31495289422288,
+            "long_price": 0.25798205794999995,
             "name": "SXP",
-            "short_price": 0.335540352
+            "short_price": 0.295939766
         },
         {
-            "long_price": 1.1566231701344025,
+            "long_price": 0.03496777759072,
+            "name": "T",
+            "short_price": 0.046239222051200006
+        },
+        {
+            "long_price": 0.9392855974725001,
             "name": "THETA",
-            "short_price": 1.2313003451999998
+            "short_price": 1.099801240758905
         },
         {
-            "long_price": 0.022581558757827,
+            "long_price": 0.01735345924209,
             "name": "TLM",
-            "short_price": 0.02530991153355
+            "short_price": 0.019557900467324998
         },
         {
-            "long_price": 0.40253038534499996,
+            "long_price": 0.34297597908,
             "name": "TOMO",
-            "short_price": 0.4588429263
+            "short_price": 0.38723981085000003
         },
         {
-            "long_price": 17.923534767822694,
+            "long_price": 13.998340724999998,
             "name": "TRB",
-            "short_price": 19.845933404999997
+            "short_price": 16.288290823885
         },
         {
-            "long_price": 0.0674069874247,
+            "long_price": 0.0662580951611475,
             "name": "TRX",
-            "short_price": 0.06998955809999999
+            "short_price": 0.06809986234
         },
         {
-            "long_price": 1.309644983538047,
+            "long_price": 1.1719987857593768,
             "name": "TWT",
-            "short_price": 1.4185398911
+            "short_price": 1.4259541097000001
         },
         {
-            "long_price": 5.7838443711125,
+            "long_price": 4.741609125,
             "name": "UNFI",
-            "short_price": 6.7733488118750005
+            "short_price": 5.46968434412994
         },
         {
-            "long_price": 6.439795781629485,
+            "long_price": 6.2362070942,
             "name": "UNI",
-            "short_price": 7.133228511885
+            "short_price": 6.49799232069164
         },
         {
-            "long_price": 0.026554430948149993,
+            "long_price": 0.02209403141625,
             "name": "VET",
-            "short_price": 0.028852663567902496
+            "short_price": 0.02503183230405
         },
         {
-            "long_price": 2.507356740262237,
+            "long_price": 2.1287118866325,
             "name": "WAVES",
-            "short_price": 2.640417791064637
+            "short_price": 2.473912500559695
         },
         {
-            "long_price": 0.21120557076719998,
+            "long_price": 0.1721738629875,
             "name": "WOO",
-            "short_price": 0.222102930405
+            "short_price": 0.18910416803
         },
         {
-            "long_price": 0.00897805641996,
+            "long_price": 0.007854170853628,
             "name": "XCN",
-            "short_price": 0.00966284465288
+            "short_price": 0.009092294684000002
         },
         {
-            "long_price": 0.04925470776,
+            "long_price": 0.036862834229999995,
             "name": "XEM",
-            "short_price": 0.059282492
+            "short_price": 0.04453946085492
         },
         {
-            "long_price": 0.08680080888,
+            "long_price": 0.08162311376462501,
             "name": "XLM",
-            "short_price": 0.088769013225
+            "short_price": 0.08606722947375
         },
         {
-            "long_price": 148.72838453406737,
+            "long_price": 144.44697735,
             "name": "XMR",
-            "short_price": 153.4006821375
+            "short_price": 153.6635997
         },
         {
-            "long_price": 0.8792140677187501,
+            "long_price": 0.792134409243123,
             "name": "XNO",
-            "short_price": 0.9487361807080389
+            "short_price": 0.8755169786371362
         },
         {
-            "long_price": 0.37502188969743,
+            "long_price": 0.36924844949999996,
             "name": "XRP",
-            "short_price": 0.38178592303275
+            "short_price": 0.3835449030613499
         },
         {
-            "long_price": 1.1209203273,
+            "long_price": 1.08460070316455,
             "name": "XTZ",
-            "short_price": 1.2296378398162402
+            "short_price": 1.1477667344000002
         },
         {
-            "long_price": 9245.37995158721,
+            "long_price": 9127.17875993,
             "name": "YFI",
-            "short_price": 10758.306258
+            "short_price": 10606.558442430127
         },
         {
-            "long_price": 0.307769255625,
+            "long_price": 0.2479087351098747,
             "name": "YGG",
-            "short_price": 0.3353782967848982
+            "short_price": 0.332249221755
         },
         {
-            "long_price": 43.963095897721345,
+            "long_price": 35.2230236215,
             "name": "ZEC",
-            "short_price": 44.70167771999999
+            "short_price": 38.93071031850001
         },
         {
-            "long_price": 12.00269477079425,
+            "long_price": 10.122756144799999,
             "name": "ZEN",
-            "short_price": 12.591625314
+            "short_price": 11.095683027
         },
         {
-            "long_price": 0.029974836102249994,
+            "long_price": 0.02471631127675,
             "name": "ZIL",
-            "short_price": 0.033955513489559996
+            "short_price": 0.027950088916805
         },
         {
-            "long_price": 0.27530299569906,
+            "long_price": 0.21692354112,
             "name": "ZRX",
-            "short_price": 0.3077961796
+            "short_price": 0.3112737048
         }
     ],
-    "total": 194
+    "total": 195
 }
