@@ -52,7 +52,12 @@ const cronTaskDiscordPositionReport = cron.schedule(process.env.REPORT_INTERVALL
 var hook;
 if (process.env.USE_DISCORD) {
     if (process.env.USE_TESTNET == "false") {
-        hook = new Webhook(process.env.DISCORD_URL);
+        if (process.env.DEBUG_MODE == "true") {
+            hook = new Webhook(process.env.DISCORD_URL_DEBUGMODE);
+        } else {
+            hook = new Webhook(process.env.DISCORD_URL);
+        }
+        
     } else {
         hook = new Webhook(process.env.DISCORD_URL_TESTNET);
     }
@@ -1306,7 +1311,7 @@ async function reportWebhook() {
         }
 
         const embed = new MessageBuilder()
-            .setTitle("```"+'--------------------------- DEV Bot Report---------------------------'+"```")
+            .setTitle("```"+'---------------------- Bot Report ----------------------'+"```")
             .addField('Balance: ', "```autohotkey" + '\n' + balance.toString() + "```", true)
             .addField('Leverage: ', "```autohotkey" + '\n' + process.env.LEVERAGE.toString() + "```", true)
             //.addField('Version: ', version.commit.toString(), true)
@@ -1336,8 +1341,12 @@ async function reportWebhook() {
                 + "Liq Price: " + positionList[i].liq+"```", true);
             }
             //purple color
-            embed.setColor('#9966cc')
-            .setTimestamp();
+            if (process.env.DEBUG_MODE == "true") {
+                embed.setColor('#9966cc');
+            } else {
+                embed.setColor('#9966cc');
+            }
+            embed.setTimestamp();
         try {
             hook.send(embed);
         }
