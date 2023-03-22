@@ -10,6 +10,7 @@ import moment from 'moment';
 import * as cron from 'node-cron'
 import sqlite3 from 'sqlite3'
 
+
 var rateLimit = 2000;
 var baseRateLimit = 2000;
 var lastReport = 0;
@@ -51,6 +52,7 @@ const cronTaskDiscordPositionReport = cron.schedule(process.env.REPORT_INTERVALL
 
 var hook;
 if (process.env.USE_DISCORD) {
+    // choose correct discord webhook
     if (process.env.USE_TESTNET == "false") {
         if (process.env.DEBUG_MODE == "true") {
             hook = new Webhook(process.env.DISCORD_URL_DEBUGMODE);
@@ -61,6 +63,13 @@ if (process.env.USE_DISCORD) {
     } else {
         hook = new Webhook(process.env.DISCORD_URL_TESTNET);
     }
+
+    // create cron job for sending graphical PnL stats
+    const cronTaskDiscordGraphReport = cron.schedule(process.env.GRAPH_INTERVALL, () => {
+        console.log(moment().toString() + ' sending graph - REPORT');
+        reportGraph(db);
+        });
+    reportGraph(db);
 }
 
 var key;
@@ -374,12 +383,16 @@ async function takeProfit(symbol, position) {
 
         if (positions.size > 0 && positions.take_profit === 0 || takeProfit !== positions.take_profit) {
             if(process.env.USE_STOPLOSS.toLowerCase() === "true") {
-                const order = await linearClient.setTradingStop({
-                    symbol: symbol,
-                    side: side,
-                    take_profit: takeProfit.toFixed(decimalPlaces),
-                    stop_loss: stopLoss.toFixed(decimalPlaces),
-                });
+                if (process.env.DEBUG_MODE == "false") {
+                    const order = await linearClient.setTradingStop({
+                        symbol: symbol,
+                        side: side,
+                        take_profit: takeProfit.toFixed(decimalPlaces),
+                        stop_loss: stopLoss.toFixed(decimalPlaces),
+                    });
+                } else {
+                    console.log("DUMMY SETTING STOP LOSS - YOU ARE IN DEBUG MODE !");
+                }
                 //console.log(JSON.stringify(order, null, 4));
 
                 if (order.ret_msg === "OK" || order.ret_msg === "not modified" || order.ret_code === 10002) {
@@ -396,12 +409,16 @@ async function takeProfit(symbol, position) {
                     else {
                         price = parseFloat(priceFetch.result[0].bid_price);
                     }
-                    const order = await linearClient.setTradingStop({
-                        symbol: symbol,
-                        side: side,
-                        take_profit: price.toFixed(decimalPlaces),
-                        stop_loss: stopLoss.toFixed(decimalPlaces),
-                    });
+                    if (process.env.DEBUG_MODE == "false") {
+                        const order = await linearClient.setTradingStop({
+                            symbol: symbol,
+                            side: side,
+                            take_profit: price.toFixed(decimalPlaces),
+                            stop_loss: stopLoss.toFixed(decimalPlaces),
+                        });
+                    } else {
+                        console.log("DUMMY SETTING STOP LOSS - YOU ARE IN DEBUG MODE !"); 
+                    }
                     console.log(chalk.red("TAKE PROFIT FAILED FOR " + symbol + " WITH ERROR PRICE MOVING TOO FAST OR ORDER ALREADY CLOSED, TRYING TO FILL AT BID/ASK!!"));
                 }
                 else {
@@ -410,11 +427,15 @@ async function takeProfit(symbol, position) {
 
             }
             else {
-                const order = await linearClient.setTradingStop({
-                    symbol: symbol,
-                    side: side,
-                    take_profit: takeProfit.toFixed(decimalPlaces),
-                });
+                if (process.env.DEBUG_MODE == "false") {
+                    const order = await linearClient.setTradingStop({
+                        symbol: symbol,
+                        side: side,
+                        take_profit: takeProfit.toFixed(decimalPlaces),
+                    });
+                } else {
+                    console.log("DUMMY SETTING STOP LOSS - YOU ARE IN DEBUG MODE !");
+                }
                 //console.log(JSON.stringify(order, null, 2));
                 if(order.ret_msg === "OK" || order.ret_msg === "not modified" || order.ret_code ===  130024) {
                     //console.log(chalk.red("TAKE PROFIT ERROR: ", JSON.stringify(order, null, 2)));
@@ -433,11 +454,15 @@ async function takeProfit(symbol, position) {
                         price = priceFetch.result[0].bid_price
                     }
                     console.log("Price for symbol " + symbol + " is " + price);
-                    const order = await linearClient.setTradingStop({
-                        symbol: symbol,
-                        side: side,
-                        take_profit: price,
-                    });
+                    if (process.env.DEBUG_MODE == "false") {
+                        const order = await linearClient.setTradingStop({
+                            symbol: symbol,
+                            side: side,
+                            take_profit: price,
+                        });
+                    } else {
+                        console.log("DUMMY SETTING STOP LOSS - YOU ARE IN DEBUG MODE !");
+                    }
                     console.log(chalk.red("TAKE PROFIT FAILED FOR " + symbol + " WITH ERROR PRICE MOVING TOO FAST, TRYING TO FILL AT BID/ASK!!"));
                 }
                 else {
@@ -679,13 +704,17 @@ async function setLeverage(pairs, leverage) {
         //remove "liquidation." from pair name
         var pair = pairs[i].replace("liquidation.", "");
 
-        const set = await linearClient.setUserLeverage(
-            {
-                symbol: pair,
-                buy_leverage: leverage,
-                sell_leverage: leverage,
-            }
-        );
+        if (process.env.DEBUG_MODE == "false") {
+            const set = await linearClient.setUserLeverage(
+                {
+                    symbol: pair,
+                    buy_leverage: leverage,
+                    sell_leverage: leverage,
+                }
+            );
+        } else {
+            console.log("DUMMY SETTING LEVERAGE - YOU ARE IN DEBUG MODE !");
+        }
         try{
             var currentLeverage = await checkLeverage(pair);
             if (currentLeverage.toString() === leverage) {
@@ -716,25 +745,28 @@ async function setLeverage(pairs, leverage) {
 
 //set position mode to hedge
 async function setPositionMode() {
+    if (process.env.DEBUG_MODE == "false") {
+        const set = await linearClient.setPositionMode({
+            coin: "USDT",
+            mode: "BothSide"
+        });
 
-    const set = await linearClient.setPositionMode({
-        coin: "USDT",
-        mode: "BothSide"
-    });
-    //log responses
-    if (set.ret_msg === "OK") {
-        console.log("Position mode set");
-        return true;
-    }
-    else if (set.ret_msg === "Partial symbols switched successfully, excluding symbols with open orders or positions.") {
-        console.log("Position mode set for symbols without  positions");
+        if (set.ret_msg === "OK") {
+            console.log("Position mode set");
+            return true;
+        }
+        else if (set.ret_msg === "Partial symbols switched successfully, excluding symbols with open orders or positions.") {
+            console.log("Position mode set for symbols without  positions");
+            return false;
+        }
+        else {
+            console.log(chalk.redBright("Unable to set position mode"));
+            return false;
+        }
+    } else {
+        console.log("DUMMY SETTING POSITION MODE - YOU ARE IN DEBUG MODE !");
         return false;
-    }
-    else {
-        console.log(chalk.redBright("Unable to set position mode"));
-        return false;
-    }
-    
+    }   
 }
 
 async function checkLeverage(symbol) {
@@ -1398,7 +1430,8 @@ function createTables(newdb) {
 function db_insertPnl(newdb, pnl_proc, pnl, bal) {
     console.log("Interserting PnL into database ...");
     var now = moment();
-    var now_text = moment().format("DD.MM.YYYY HH:mm:ss").toString();
+    //var now_text = moment().format("DD.MM.YYYY HH:mm:ss").toString();
+    var now_text = moment().format();   // ISO8601 is needed for further calculations
     newdb.exec("INSERT INTO pnl (timestamp, date, pnl_procent, pnl_usdt, balance) values ("+ now + ",'" + now_text + "'," + pnl_proc + "," + pnl + "," + bal + ");", (err)  => {
         if (err) {
             console.log("Could not write to database !\n" + err);
@@ -1416,6 +1449,84 @@ async function putBalanceInDb() {
     var balance = balance.toFixed(2);
     
     db_insertPnl(db, percentGain, diff, balance);
+}
+
+async function reportGraph(newdb) {
+    //query pnl summed up per day
+    const sql = `SELECT date,
+	                sum(pnl_procent) as 'pnl_daily'
+                FROM
+                    pnl
+                WHERE
+                    date > DATETIME('now', '-1 day')
+                GROUP by
+                    date;`
+    var day;
+    var day_cnt;
+    var pnl_per_day = [];
+    var json_pnl = [];
+    var pnl_sum_per_day = 0;
+    var chart_labels = [];
+    var chart_pnl = [];
+    var encodedChart;
+    var chartUrl;
+    //const sql = `SELECT from_unixtimestamp('timestamp) from table where from_unixtimestamp('timestamp') > date_sub(now(), interval 7 day)`;
+    newdb.all(sql, [], (err, rows) => {
+        if (err) {
+          console.log("Could not read database\n" + err);
+        }
+        // populate objects
+        rows.forEach((row) => {
+            day = row.date;
+            pnl_sum_per_day = row.pnl_daily;
+            pnl_per_day[day_cnt++] = {day, pnl_sum_per_day};
+            json_pnl.push(pnl_per_day[day_cnt - 1]);
+        });
+
+        console.log(json_pnl);
+
+        //create lables and values for graph
+        for(var i = 0; i < json_pnl.length; i++) {
+            console.log(json_pnl[i].day + json_pnl[i].pnl_sum_per_day);
+            chart_labels.push(moment(json_pnl[i].day).format('DD.MM.'));
+            chart_pnl.push(json_pnl[i].pnl_sum_per_day);
+        }
+
+        // construct graph 
+        const chart = {
+            type: 'bar',
+            data: {
+              //labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4'],
+              labels: chart_labels,
+              datasets: [
+                {
+                  label: 'Daily PnL',
+                  //data: [12, 5, 40, 5],
+                  data: chart_pnl,
+                },
+              ],
+            },
+          };
+        console.log(chart);
+        encodedChart = encodeURIComponent(JSON.stringify(chart));
+        chartUrl = `https://quickchart.io/chart?c=${encodedChart}`;
+        //console.log(chartUrl);
+
+        const embed = new MessageBuilder()
+          .setTitle('PnL Report')
+          //.setImage("https://bit.ly/3TemeyB")
+          .setImage(chartUrl)
+          .setColor('#0000ff')
+          .setTimestamp();
+            try {
+                hook.send(embed);
+            } catch (err) {
+                console.log(chalk.red("Discord Webhook Error"));
+            }
+
+        });
+        
+        
 }
 
 async function main() {
